@@ -10,7 +10,7 @@ Welcome to my blog.
 <div>
     {% assign posts_list = site.posts %}
     {% for node in posts_list %}
-      {% if node.title != null && node.title != "Welcome"%}
+      {% if node.title != null and node.title != 'Welcome'%}
         
           <a class="" href="{{ node.url }}">{{ node.title }}</a>
         

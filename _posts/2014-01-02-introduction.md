@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introducing Lanyon
+title: Welcome
 ---
 
 Welcome to my blog.

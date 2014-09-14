@@ -1,5 +1,5 @@
 ---
-title : not title
+title : title
 layout : post
 ---
 

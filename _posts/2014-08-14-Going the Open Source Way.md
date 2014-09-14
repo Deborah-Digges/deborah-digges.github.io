@@ -4,7 +4,7 @@ layout: post
 ---
 Starting out is never easy - it’s daunting at first; The thought of contributing to open source seems difficult and time-consuming - must one be a coding genius favoured with an infinite amount of free time to make even a semblance of a meaningful contribution?
 
-The innumerable blogs and guides on “How to contribute to open source” tell me to find something that interests me, look for issues, report issues, write patches, fix documentation, get to know the community, join the mailing lists, actively participate on IRCs. The merit of all things lies in their difficulty, and it seems like this is no different.
+The innumerable blogs and guides on “How to contribute to open source” tell us to find something that interests us, look for issues, report issues, write patches, fix documentation, get to know the community, join the mailing lists, actively participate on IRCs. The merit of all things lies in their difficulty, and it seems like this is no different.
 
 So, that’s exactly what we did -- painstakingly went through issues raised on projects we were familiar with or software that we’d used. It took us almost two weeks to peg down something we could start working on - our needle in the haystack, 500lines.
 

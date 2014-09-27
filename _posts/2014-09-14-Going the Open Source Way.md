@@ -1,6 +1,7 @@
 ---
 title: Going the Open Source Way
 layout: post
+comments: True
 ---
 Starting out is never easy - it’s daunting at first; The thought of contributing to open source seems difficult and time-consuming - must one be a coding genius favoured with an infinite amount of free time to make even a semblance of a meaningful contribution?
 

@@ -1,3 +1,8 @@
+---
+title: Demystifying The GC
+layout: post
+comments: True
+---
 Garbage Collection is a form of automatic memory management. It reclaims objects that are no longer in use, saving the programmer the effort of the wild goose chase that tracing memory related bugs often is.<br/>
 +1 to [John McCarthy](http://swizec.com/blog/the-birth-of-lisp-a-summary-of-john-mccarthys-original-paper/swizec/5075).<br/>
 Let’s try to understand what a  GC does and how it does it.

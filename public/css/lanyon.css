@@ -73,16 +73,16 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .container {
-  max-width: 28rem;
+  max-width: 32rem;
 }
 @media (min-width: 38em) {
   .container {
-    max-width: 32rem;
+    max-width: 40rem;
   }
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 56rem;
   }
 }
 
@@ -494,7 +494,7 @@ a.pagination-item:hover {
 /* Blue */
 .theme-base-0d .sidebar,
 .theme-base-0d .sidebar-toggle:active,
-.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {
+.theme-base-0d #sidebar-checkbox:checked ~ .sidebar-toggle {co
   background-color: #6a9fb5;
 }
 .theme-base-0d .container a,

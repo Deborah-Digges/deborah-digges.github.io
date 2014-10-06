@@ -67,7 +67,7 @@ The sweep phase identifies all blocks that are unmarked as garbage and reclaims 
 
 (3)   The Copying Algorithm
 
-The heap is divided equally into two semi-spaces, one containing current data and the other obsolete data. The collector starts by flipping the two spaces. The active blocks in the old semi-space, FromSpace, are copied to the new semi-space ToSpace. After this process, a replica of the active data structure of the program has been created in ToSpace. Garbage cells are simply abandoned in the old space. These collectors are called Scavengers - - they pick out worthwhile objects from amidst the garbage and take them away.
+The heap is divided equally into two semi-spaces, one containing current data and the other obsolete data. The collector starts by flipping the two spaces. The active blocks in the old semi-space, FromSpace, are copied to the new semi-space ToSpace. After this process, a replica of the active data structure of the program has been created in ToSpace. Garbage cells are simply abandoned in the old space. These collectors are called Scavengers -- they pick out worthwhile objects from amidst the garbage and take them away.
 
 The algorithm chosen depends largely on the requirements of the system and the type of data that it generates.
 

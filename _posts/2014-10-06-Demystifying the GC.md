@@ -9,7 +9,7 @@ Let’s try to understand what a  GC does and how it does it.
 
 ##Thanks for the Memory
 
-![Process Memory Layout](https://github.com/Deborah-Digges/Deborah-Digges.github.io/raw/master/images/memory-layout.png "Memory Layout")
+![Process Memory Layout]({{site.url}}/images/memory-layout.png)
 
 When a program runs, it is designated a process and is entitled to a virtual address space. The concept of virtual addressing is a different beast altogether, but in essence here’s what it means:<br/> 
 On a 32 bit system, the address bus is 32 bits wide; the number of addressable locations is 2<sup>32</sup>. Memory is byte-addressable -- the smallest addressable unit of memory is a byte. Coupling this fact with the previous gives us a total of 2<sup>32</sup> bytes of addressable memory(~ 4GB). *Every* process’ virtual address space is 4GB. A process *assumes* it owns the entire memory space. At run time, these addresses are translated to *real* hardware addresses by the MMU and the OS. Groovy. 

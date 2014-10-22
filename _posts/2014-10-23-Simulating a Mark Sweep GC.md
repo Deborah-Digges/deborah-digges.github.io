@@ -17,11 +17,11 @@ Reachable objects are those referenced directly from the stack or those that can
 The objects shown in *green* are those reachable.
 
 ##Garbage == Unreachable Objects?
-Any object that is unreachable is termed garbage because it is not of any use to the executing program. It can’t be allocated for any other request despite it being unused. 
+Any object that is unreachable is termed garbage because it is not of any use to the executing program. It can’t be allocated for any other request despite it being unused.<br/>
 The objects shown in *red* are the ones unreachable, ripe for collection.
 
 ##The Mark Phase
-Starting from the objects referenced from the stack, the mark procedure proceeds to *mark* all reachable objects. At the end of this phase, the objects shown in green will be marked.
+Starting from the objects referenced from the stack, all reachable objects are *marked*. At the end of this phase, the objects shown in green will be marked.
 
 ##The Sweep Phase
 The objects which are unreachable are *collected* which moves them to the free list. A single pass is made through the allocated list, and all objects unmarked at the end of the mark phase are removed from this list and returned to the free list.

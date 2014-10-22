@@ -9,7 +9,7 @@ A simplifying assumption we are making is that allocation of memory is always in
 The virtual machine’s *execution stack* holds references to objects, which can either be atomic or can in turn hold references to other objects. 
 
 ![VM]({{site.url}}/images/gc.png)
-<b>Fig: Illustration of the working of a GC</b>
+<b style="position:relative;left:50%">Fig: Illustration of the working of a GC</b>
 
 ##What does Allocation Involve?
 Allocation of memory for any purpose, such as object creation, involves removing a memory block from the *free list* and adding it to the *allocated list*. The reference to the newly created object will be pushed onto the stack, so the program can manipulate it’s contents.

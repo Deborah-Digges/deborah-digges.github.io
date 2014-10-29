@@ -554,7 +554,10 @@ a.pagination-item:hover {
 
 img
 {
-	float: left;
-	margin: 20px;
+	clear: both;
+	margin: 0 auto;
 }
-
+.align-center
+{
+	text-align: center;
+}

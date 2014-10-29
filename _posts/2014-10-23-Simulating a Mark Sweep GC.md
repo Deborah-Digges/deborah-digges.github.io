@@ -8,8 +8,9 @@ To understand the basic machinery of a garbage collector, consider a *virtual ma
 A simplifying assumption we are making is that allocation of memory is always in *fixed size* blocks. If this weren’t the case, we would have to slay an ugly dragon called *fragmentation* which we will save for another day.<br/>
 The virtual machine’s *execution stack* holds references to objects, which can either be atomic or can in turn hold references to other objects. 
 
+
 ![VM]({{site.url}}/images/gc.png)
-<b style="position:relative;left:50%">Fig: Illustration of the working of a GC</b>
+<div class="align-center">Fig: Illustration of the working of a GC</div>
 
 ##What does Allocation Involve?
 Allocation of memory for any purpose, such as object creation, involves removing a memory block from the *free list* and adding it to the *allocated list*. The reference to the newly created object will be pushed onto the stack, so the program can manipulate it’s contents.

@@ -538,7 +538,7 @@ a.pagination-item:hover {
 .theme-base-13 .related-posts li a:hover {
   color: #133253;
 }
-.theme-base-13 h1,h2{
+.theme-base-13 h1,h2,h3,h4,h5,h6{
   color: #133253;
 }
 
@@ -569,12 +569,11 @@ a.pagination-item:hover {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
 
-img
-{
-	clear: both;
-	margin: 0 auto;
+img{
+    clear: both;
+    margin: 0 auto;
 }
-.align-center
-{
-	text-align: center;
+
+.align-center{
+    text-align: center;
 }

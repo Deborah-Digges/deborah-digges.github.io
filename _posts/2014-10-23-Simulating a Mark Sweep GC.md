@@ -37,4 +37,4 @@ The objects which are unreachable are *collected* which moves them to the free l
 </ol>
 
 So, there it is - A *simulation* of a mark sweep GC.<br/>
-You can find the code for the above simulation [here](https://github.com/Deborah-Digges/mark-sweep-simulation).
+You can find the code for the above simulation [here](https://github.com/Deborah-Digges/mark-sweep-simulation/tree/master/01-marksweep-simple).

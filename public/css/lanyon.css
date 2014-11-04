@@ -533,7 +533,6 @@ a.pagination-item:hover {
 .theme-base-13 #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #133253;
 }
-.theme-base-13 .container a,
 .theme-base-13 .sidebar-toggle,
 .theme-base-13 .related-posts li a:hover {
   color: #133253;

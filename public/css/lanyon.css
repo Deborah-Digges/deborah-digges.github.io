@@ -541,7 +541,13 @@ a.pagination-item:hover {
   color: #133253;
 }
 
-
+.theme-base-13 .page-title,
+.theme-base-13 .post-title,
+.theme-base-13 .post-title a,
+.theme-base-13 .masthead-title,
+.theme-base-13 .masthead-title a {
+  color: #133253;
+}
 
 
 /*

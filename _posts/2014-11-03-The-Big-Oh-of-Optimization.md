@@ -19,7 +19,7 @@ However, what recursion *is* great for is *understanding* the problem.
 The algorithm is succinct and lends itself to easy interpretation -
 Mark an object if it isn't already marked; if it has references to other objects, mark those too.
 
-{% highlight ruby %}
+{% highlight C++ %}
 {% raw %}
 void VM::mark(Object* object)
 {

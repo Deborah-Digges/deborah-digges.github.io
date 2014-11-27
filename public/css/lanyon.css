@@ -45,7 +45,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Calendas_Plus, Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #313131;
   letter-spacing: -.025rem;
@@ -586,4 +586,9 @@ img{
 
 .align-center{
     text-align: center;
+}
+
+@font-face {
+font-family: "Calendas_Plus";
+src: url("Calendas_Plus.otf") format("opentype");
 }

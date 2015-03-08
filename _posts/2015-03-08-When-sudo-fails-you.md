@@ -1,5 +1,5 @@
 ---
-title: When sudo fails you
+title: When sudo Fails You
 layout: post
 comments: True
 ---
@@ -51,7 +51,7 @@ The uchg file flag can be set or cleared by the owner of the file. To clear the 
 {% highlight bash %}
 $ chflags nouchg text.properties 
 {% endhighlight %}
-The uchg flag has been cleared:
+The uchg flag will have been cleared:
 {% highlight bash %}
 $ ls -lO text.properties 
 -r--r--r--  1 ddigges  846622648  - 0 Mar  3 09:46 text.properties
@@ -61,4 +61,4 @@ $ chmod +w text.properties
 $ ls -l text.properties 
 -rw-r--r--  1 ddigges  846622648  0 Mar  3 09:46 text.properties
 {% endhighlight %}
-And thus was restored the balance of power.
+And thus will be restored the balance of power in the universe.

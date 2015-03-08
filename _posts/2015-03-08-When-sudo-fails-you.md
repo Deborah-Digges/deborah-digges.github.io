@@ -4,10 +4,6 @@ layout: post
 comments: True
 ---
 
-<div class="disclaimer-header" >
-	This post is only relevant to the OS X family and other flavours of UNIX that support BSD flags.
-</div>
-<div></div>
 I was running the fairly common command to make a read-only file writable and ran into permission issues:
 
 {% highlight bash %}
@@ -63,3 +59,7 @@ $ ls -l text.properties
 -rw-r--r--  1 ddigges  846622648  0 Mar  3 09:46 text.properties
 {% endhighlight %}
 And thus was restored the balance of power.
+
+<div class="disclaimer-header" >
+	This post is only relevant to the OS X family and other flavours of UNIX that support BSD flags.
+</div>

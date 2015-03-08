@@ -12,9 +12,15 @@
     {% endif %}
   </title>
 
-  {% if page.url and site.baseurl %}
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-  {% endif %}
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/lanyon.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/public/boostrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/public/boostrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/public/boostrap/css/bootstrap-responsive.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/public/boostrap/css/bootstrap-responsive.min.css">
 
   <link rel="stylesheet" href="{{ '/public/css/poole.css' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/public/css/syntax.css' | absolute_url }}">

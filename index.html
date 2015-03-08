@@ -13,7 +13,7 @@ title: Home
     </h1>
     <span class="post-date">{{ post.date | date_to_string }}</span>
     <p>{{ post.content | truncatewords: 40 }}</p>
-    <span class="glyphicon glyphicon-heart-empty"></span><a href={{post.url}}>READ MORE</a>
+    &#x2764 &nbsp <a href={{post.url}}>READ MORE</a>
 </div>
   {% endfor %}
 </div>

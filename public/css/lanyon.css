@@ -459,7 +459,7 @@ a.pagination-item:hover {
 .theme-base-0a .sidebar,
 .theme-base-0a .sidebar-toggle:active,
 .theme-base-0a #sidebar-checkbox:checked ~ .sidebar-toggle {
-  background-color: #f4bf75;
+  background-color: #BD6666;
 }
 .theme-base-0a .container a,
 .theme-base-0a .sidebar-toggle,
@@ -583,7 +583,19 @@ img{
     text-align: center;
 }
 
-@font-face {
-font-family: "Calendas_Plus";
-src: url("Calendas_Plus.otf") format("opentype");
+
+.disclaimer-header{
+    background-color: #BD6666;
+    padding: 2%;
+    margin: 5%;
+    color: white;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
+
+@font-face {
+    font-family: "Calendas_Plus";
+    src: url("Calendas_Plus.otf") format("opentype");
+}
+

@@ -36,7 +36,7 @@ else                                   thing2();  => Compiler cries.
 Even enclosing the macro body in braces would not help, as you would need to omit the semicolon after the call to FOO, which is counter-intuitive.
 
 {% highlight c %}
-#define { FOO(stuff) thing1(); thing2() }
+#define FOO(stuff) { thing1(); thing2(); }
 
 if (condition)
     FOO(x)

@@ -26,11 +26,18 @@ For example, if FOO was defined as below:
 {% endhighlight %}
 the following if-else construct would be syntactically wrong:
 {% highlight c%}
-if (condition)                     if (condition)
-    FOO(stuff);        ====>           thing1();
-else                                   thing2();  => Compiler cries.
-    other_stuff();                 else
-                                       other_stuff();
+if (condition)                     
+    FOO(stuff);                  
+else                                   
+    other_stuff();                 
+                                       
+
+// Preprocessed to:                                       
+if (condition)
+    thing1();
+    thing2();  => Compiler cries.
+else
+    other_stuff();
 {% endhighlight %}
 
 Even enclosing the macro body in braces would not help, as you would need to omit the semicolon after the call to FOO, which is counter-intuitive.

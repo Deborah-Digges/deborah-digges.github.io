@@ -5,8 +5,8 @@ description:      'Blog entries'
 excerpt_separator: ''
 url:              http://deborah-digges.github.io
 baseurl:          '/'
-paginate:         5
 permalink:           pretty
+paginate:         10
 
 # About/contact
 author:

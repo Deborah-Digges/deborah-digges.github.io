@@ -4,8 +4,6 @@ layout: post
 comments: True
 ---
 
-#Remember the Intern
-
 The word *intern* will perhaps conjure up a host of mental images--the figure perennially at the table-tennis table or camping out in the pantry, the one with the extravagant chrome theme which calls out to you from across the room, the one who likes everything with a side of cheese; to me, it’s what I’ve been for nearly eight months now at  [Intuit](www.intuit.in). With the end of my internship drawing nigh and my work dwindling low, I’ve decided to compile a compendium of the things I've learnt over this period, which I hope will help some intern-to-be.
 
 ###Always Ask

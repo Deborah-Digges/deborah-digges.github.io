@@ -31,7 +31,7 @@ However, when you create a new file it will remember which letters were capitali
 {% highlight bash %}
 $ mkdir aBc
 $ ls -ld aBc
-drwxr-xr-x  2 ddigges  CORP\Domain Users  68 Nov 11 18:27 aBc
+drwxr-xr-x  2 ddigges  ddigges  68 Nov 11 18:27 aBc
 {% endhighlight %}
 HFS is a bit of an oddity, having the ability to ignore and recognize case at the same time. 
 

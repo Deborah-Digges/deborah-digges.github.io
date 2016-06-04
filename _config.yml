@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+# Dependencies
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+>>>>>>> Change highlighter back to pygments
 # Setup
 title:            Deborah Digges
 tagline:          'A Technical blog'

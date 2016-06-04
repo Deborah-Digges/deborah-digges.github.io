@@ -1,5 +1,5 @@
 # Dependencies
-rouge:         true
+pygments:         true
 
 # Permalinks
 permalink:        pretty

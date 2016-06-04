@@ -7,7 +7,7 @@ Garbage Collection is a form of automatic memory management. It reclaims objects
 +1 to [John McCarthy](http://swizec.com/blog/the-birth-of-lisp-a-summary-of-john-mccarthys-original-paper/swizec/5075).<br/>
 Let’s try to understand what a  GC does and how it does it.
 
-##Thanks for the Memory
+## Thanks for the Memory
 
 ![Process Memory Layout]({{site.url}}/images/memory-layout.png)
 
@@ -21,7 +21,7 @@ Global data in the program is stored in the data segment. Their size is known at
 The heap is the only place where dynamic allocation is possible. It is a large pool of memory from which memory requests are satisfied at run time. Requests for allocation return a pointer to a block of heap memory of the required size. At any point in time, some parts of the heap are in use and the others are free.
 
 
-##So, What is Garbage ?
+## So, What is Garbage ?
 
 The only way to access heap memory is through pointers returned by allocations. So, if a region of heap memory is marked as *allocated* , but it is not accessible i.e. no pointer points to the block, it is termed Garbage.
 >“Allocated but not accessible”
@@ -34,12 +34,12 @@ to it still exists.
 
 Dangling pointers can occur anywhere.
 
-##Now, for What a GC Does
+## Now, for What a GC Does
 
 Reiterating - Garbage Collection is a form of automatic memory management. It reclaims objects that are no longer in use. 
 The garbage collector only reclaims objects on the heap.
 
-##Sweep the Heap, Don’t Whack the Stack
+## Sweep the Heap, Don’t Whack the Stack
 
 It makes no sense for the garbage collector to consider collecting stack memory because the stack is not managed that way: Everything on the stack is considered to be "in use". And memory used by the stack is automatically reclaimed when you return from method calls. Memory management of stack space is so simple, cheap and easy that you wouldn't want garbage collection to be involved.
 

@@ -24,12 +24,14 @@ The heap is the only place where dynamic allocation is possible. It is a large p
 ## So, What is Garbage ?
 
 The only way to access heap memory is through pointers returned by allocations. So, if a region of heap memory is marked as *allocated* , but it is not accessible i.e. no pointer points to the block, it is termed Garbage.
+
 >“Allocated but not accessible”
 
 It’s important to realize that garbage can *only* occur on the heap.
 
 This is congruent to the concept of a dangling pointer - where a location is freed, but a pointer
 to it still exists.
+
 >“Accessible but no allocation”
 
 Dangling pointers can occur anywhere.
@@ -43,12 +45,12 @@ The garbage collector only reclaims objects on the heap.
 
 It makes no sense for the garbage collector to consider collecting stack memory because the stack is not managed that way: Everything on the stack is considered to be "in use". And memory used by the stack is automatically reclaimed when you return from method calls. Memory management of stack space is so simple, cheap and easy that you wouldn't want garbage collection to be involved.
 
-##The Root of All GCs
+## The Root of All GCs
 
 Variables on the stack, in the data segment and in registers that reference heap memory form the *root set*. The gc de-allocates values that are not reachable by following references from the root set. 
 
 
-##No Silver Bullet
+## No Silver Bullet
 
 There are a host of ways in which a GC may, starting from the root set, find unused heap memory and re-claim it. The three classical methods of storage reclamation are:
 
@@ -71,7 +73,7 @@ The heap is divided equally into two semi-spaces, one containing current data an
 
 The algorithm chosen depends largely on the requirements of the system and the type of data that it generates.
 
-##In Conclusion
+## In Conclusion
 
 I’ve described garbage collection as the automatic reclamation of unused memory.
 However, this description loses sight of the forest for the trees and confuses the mechanism with the goal. It's like saying the job of a firefighter is "driving a red truck and spraying water".

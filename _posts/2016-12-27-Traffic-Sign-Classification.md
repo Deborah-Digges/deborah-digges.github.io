@@ -47,7 +47,7 @@ The model consisted of 2 convolutional layers followed by two fully connected la
 
 ### 4. Training the model
 
-Training on a CPU became quickly unwieldly and frustrating, so I set up an environment in AWS by following the instructions [here](http://max-likelihood.com/2016/06/18/aws-tensorflow-setup/). Additionally, to set up jupyter on AWS and run Jupyter Notebooks remotely, I followed the instructions [here](https://gist.github.com/iamatypeofwalrus/5183133). The model was trained for around 100 epochs resulting in validation accuracy of 99.7% and a test accuracy of 96.2%.
+Training on a CPU became quickly unwieldy and frustrating, so I set up an environment in AWS by following the instructions [here](http://max-likelihood.com/2016/06/18/aws-tensorflow-setup/). Additionally, to set up jupyter on AWS and run Jupyter Notebooks remotely, I followed the instructions [here](https://gist.github.com/iamatypeofwalrus/5183133). The model was trained for around 100 epochs resulting in validation accuracy of 99.7% and a test accuracy of 96.2%.
 
 ### 5. Testing on real world examples
 

@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-=======
-# Dependencies
-rouge:         true
-
-# Permalinks
-permalink:        pretty
-
->>>>>>> Change highlighter back to pygments
 # Setup
 title:            Deborah Digges
 tagline:          'A Technical blog'
@@ -30,3 +21,6 @@ plugins:
 # Custom vars
 version:             1.1.0
 google_analytics_id: #UA-XXXX-Y
+github:
+  repo:           https://github.com/poole/lanyon
+gems: [jekyll-crosspost-to-medium]

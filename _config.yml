@@ -10,7 +10,7 @@ tagline:          'A Technical blog'
 description:      'Blog entries'
 excerpt_separator: ''
 url:              http://deborah-digges.github.io
-baseurl:          '/'
+baseurl:          ''
 paginate:         10
 
 author:

@@ -12,4 +12,5 @@ Let the games begin!
 
 ![games]({{site.url}}/images/deep-reinforcement-learning.gif)
 <div></div>
+
 [Source](https://github.com/udacity/deep-reinforcement-learning)

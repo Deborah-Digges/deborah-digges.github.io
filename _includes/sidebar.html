@@ -9,7 +9,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.title == 'Home' %} active{% endif %}" href="{{ '/' | absolute_url }}">Home</a>
+    <a class="sidebar-nav-item{% if page.title == 'Blog' %} active{% endif %}" href="{{ '/' | absolute_url }}">Blog</a>
 
     {% assign pages_list = site.pages %}
     {% for node in pages_list %}

@@ -18,7 +18,7 @@ I considered refurbishing my blog with either [Gatsby](https://www.gatsbyjs.com/
 
 ### Scaffolding
 
-Getting a Gatsby project up and running is [well-documented](https://www.gatsbyjs.com/docs/quick-start/) on the Gatsby site. Enhancing the project generate a page from a markdown file is also [clearly explained](https://www.gatsbyjs.com/docs/adding-markdown-pages/).
+Getting a Gatsby project up and running is [well-documented](https://www.gatsbyjs.com/docs/quick-start/) on the Gatsby site. Enhancing the project to generate a page from a markdown file is also [clearly explained](https://www.gatsbyjs.com/docs/adding-markdown-pages/).
 These are the steps I followed to get the initial project set up for the blog:
 
 - Used `gatsby-source-filesystem` to read files into Gatsby. Added an entry to the `plugins`key in `gatsby.config.js`:
@@ -62,11 +62,11 @@ I copied all the markdown files from my old website to the folder indicated in t
 ### Fixing All the Things
 
 #### Links
-To avoid breaking links, I used the same slug format as before
-In my case, the slug is derived from the filename
-Use createFilePath to access the filename
-Perform logic to create the slug
-Use createNodeField to create fields that can be queried per file.
+To avoid breaking links, I used the same slug format as before: `YYYY/MM/DD/Title`. In my case, the slug was derived from the filename instead of the frontmatter, which required a little special handling. 
+
+- Used createFilePath to access the filename
+- Performed logic to create the slug
+- Used createNodeField to create fields that can be queried per file.
 
 #### Highlighting
 Changing from pygment to markdown highlighting

@@ -12,15 +12,14 @@ It served me well over the years, but my unfamiliarity with how it works kept me
 
 ## Why Gatsby?
 
-I considered for restructuring my blog with [Gatsby](https://www.gatsbyjs.com/blog/2017-11-08-migrate-from-jekyll-to-gatsby/) and [Next](https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6). I decided to go with Gatsby since it is a little more specialized towards static site generation, which makes things like reading markdown files well supported out of the box.
+I considered refurbishing my blog with either [Gatsby](https://www.gatsbyjs.com/blog/2017-11-08-migrate-from-jekyll-to-gatsby/) or [Next](https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6). I decided to go with Gatsby since it is a little more specialized towards static site generation.
 
 ## Let's Get Migrating
 
 ### Scaffolding
 
-
 Getting a Gatsby project up and running is [well-documented](https://www.gatsbyjs.com/docs/quick-start/) on the Gatsby site. Enhancing the project generate a page from a markdown file is also [clearly explained](https://www.gatsbyjs.com/docs/adding-markdown-pages/).
-These are the first few steps I followed to get a basic project structure set up for the blog:
+These are the steps I followed to get the initial project set up for the blog:
 
 - Used `gatsby-source-filesystem` to read files into Gatsby. Added an entry to the `plugins`key in `gatsby.config.js`:
 
@@ -51,7 +50,7 @@ plugins: [
 ```
 
 
-- Create a [template](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/templates/blogTemplate.js) for a blog post using React to render the above data in a React component
+- Created a [template](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/templates/blogTemplate.js) for a blog post using React to render the above data in a React component
 
 - Generated pages for all markdown files using the [`createPage` Gatsby API](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L55)
 
@@ -60,10 +59,10 @@ plugins: [
 ### Migrating Content
 I copied all the markdown files from my old website to the folder indicated in the `gatsby-source-filesystem` config entry: `markdown-pages`. I was now able to see all my old blogs being listed on the index page, albeit with many aspects being broken.
 
-### Fix All the Things
+### Fixing All the Things
 
 #### Links
-To avoid breaking links, use the same slug format as before, for this
+To avoid breaking links, I used the same slug format as before
 In my case, the slug is derived from the filename
 Use createFilePath to access the filename
 Perform logic to create the slug

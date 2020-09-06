@@ -6,30 +6,36 @@ crosspost_to_medium: true
 
 Six years ago, during my final year in college, I was enrolled in a course on Open Source technology. To pass the course was to do two things: contribute to an open source project, and blog about it. Laughably, the only thing that propelled me to start writing publicly was the fear of failing the class.
 
-I passed the course, and managed to get some semblance of a blog together. However, I didn't put too much effort into building the site itself since much of my effort was expended writing the content and trying to creep my way into open source. At the time, Jekyll was all the rage and I went with a themed Jekyll starter called Lanyon.
+I passed the course, and managed to get some semblance of a blog together. However, I didn't put too much effort into building the site itself since much of my effort was expended writing the content and trying to creep my way into open source. At the time, Jekyll was all the rage and I went with a themed Jekyll starter called [Lanyon](https://github.com/poole/lanyon).
 
-It's served me well over the years, but my unfamiliarity with how it works kept me from making any substantial changes to the structure of the site. I've finally taken the stand to move to a stack I'm more comfortable with. Enter: GatsbyJS.
+It served me well over the years, but my unfamiliarity with how it works kept me from making any substantial changes to the structure of the site. I've finally taken the stand to move to a stack I'm more comfortable with.
 
- ## Why Gatsby?
+## Why Gatsby?
 
-The two options I considered for restructuring my blog were Gatsby and Next. I decided to go with Gatsby since it was a a little more specialized towards static site generation, which made things like reading markdown files very basic.
-
-https://www.gatsbyjs.com/blog/2017-11-08-migrate-from-jekyll-to-gatsby/
-https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6#comments
+I considered for restructuring my blog with [Gatsby](https://www.gatsbyjs.com/blog/2017-11-08-migrate-from-jekyll-to-gatsby/) and [Next](https://dev.to/joserfelix/how-to-make-a-static-blog-with-next-js-2bd6). I decided to go with Gatsby since it is a little more specialized towards static site generation, which makes things like reading markdown files well supported out of the box.
 
 ## Let's Get Migrating
 
 ### Scaffolding
 
 
-Getting a Gatsby project up and running is [well-documented](https://www.gatsbyjs.com/docs/adding-markdown-pages/) on the Gatsby site. Enhancing the project generate a page from a markdown file is also [clearly explained](https://www.gatsbyjs.com/docs/adding-markdown-pages/)
+Getting a Gatsby project up and running is [well-documented](https://www.gatsbyjs.com/docs/quick-start/) on the Gatsby site. Enhancing the project generate a page from a markdown file is also [clearly explained](https://www.gatsbyjs.com/docs/adding-markdown-pages/).
+These are the first few steps I followed to get a basic project structure set up for the blog:
 
-- Use gatsby-source-filesystem to read (markdown) files into Gatsby
-- Parse markdown files using gatsby-transformer-remark to extract the frontmatter as data and the content as html. 
+- Used `gatsby-source-filesystem` to read files into Gatsby
+
+- Parsed markdown files using `gatsby-transformer-remark` to extract the frontmatter as data and the content as html.
+
 - Create a template using React to render the above data as a blog post page
-- Generate pages for all your markdown files using the createPage Gatsby API
-- Create a listing page for all your blog articles
 
+- Generated pages for all markdown files using the createPage Gatsby API
+
+- Created a listing page for all your blog articles
+
+My project structural ended up looking like this:
+
+```
+```
 
 ### Move all your Markdown files
 Copy all the markdown files from your old website to the folder indicated in your gatsby-source-filesystem config entry

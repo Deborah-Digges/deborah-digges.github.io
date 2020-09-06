@@ -22,25 +22,45 @@ I considered for restructuring my blog with [Gatsby](https://www.gatsbyjs.com/bl
 Getting a Gatsby project up and running is [well-documented](https://www.gatsbyjs.com/docs/quick-start/) on the Gatsby site. Enhancing the project generate a page from a markdown file is also [clearly explained](https://www.gatsbyjs.com/docs/adding-markdown-pages/).
 These are the first few steps I followed to get a basic project structure set up for the blog:
 
-- Used `gatsby-source-filesystem` to read files into Gatsby
+- Used `gatsby-source-filesystem` to read files into Gatsby. Added an entry to the `plugins`key in `gatsby.config.js`:
+
+```
+plugins: [
+ {
+   resolve: `gatsby-source-filesystem`,
+   options: {
+     name: `markdown-pages`,
+     path: `${__dirname}/src/markdown-pages`,
+ }
+}]
+```
 
 - Parsed markdown files using `gatsby-transformer-remark` to extract the frontmatter as data and the content as html.
 
-- Create a template using React to render the above data as a blog post page
-
-- Generated pages for all markdown files using the createPage Gatsby API
-
-- Created a listing page for all your blog articles
-
-My project structural ended up looking like this:
-
 ```
+plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
+    `gatsby-transformer-remark`
+]
 ```
 
-### Move all your Markdown files
-Copy all the markdown files from your old website to the folder indicated in your gatsby-source-filesystem config entry
 
-### Fix all the things
+- Create a [template](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/templates/blogTemplate.js) for a blog post using React to render the above data in a React component
+
+- Generated pages for all markdown files using the [`createPage` Gatsby API](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L55)
+
+- Created an [index page](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/pages/index.js) for all blog articles that displays a list of links
+
+### Migrating Content
+I copied all the markdown files from my old website to the folder indicated in the `gatsby-source-filesystem` config entry: `markdown-pages`. I was now able to see all my old blogs being listed on the index page, albeit with many aspects being broken.
+
+### Fix All the Things
 
 #### Links
 To avoid breaking links, use the same slug format as before, for this

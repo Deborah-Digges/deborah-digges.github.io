@@ -9,6 +9,6 @@ build_and_deploy:
     git config --global user.name $GH_USERNAME &&
     git remote set-url origin https://$GH_USERNAME:${{ GH_TOKEN }}@github.com/deborah-digges/deborah-digges.github.io.git &&
     yarn install && yarn run deploy
-  skip_cleanup: true
+  skip_cleanup: false
   on:
     branch: master

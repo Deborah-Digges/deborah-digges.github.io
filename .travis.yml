@@ -3,9 +3,12 @@ before_script:
   - npm install -g gatsby-cli
 node_js:
   - "10"
-deploy:
+build_and_deploy:
   provider: script
-  script: yarn install && yarn run deploy
+  script: git config --global user.email $GH_EMAIL &&
+    git config --global user.name $GH_USERNAME &&
+    git remote set-url origin https://$GH_USERNAME:${{ GH_TOKEN }}@github.com/deborah-digges/deborah-digges.github.io.git &&
+    yarn install && yarn run deploy
   skip_cleanup: true
   on:
     branch: master

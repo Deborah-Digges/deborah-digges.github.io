@@ -62,10 +62,10 @@ I copied all the markdown files from my old website to the folder indicated in t
 To avoid breaking links, I used the same slug format that my old Jekyll site used: `YYYY/MM/DD/Title`. In my case, the slug was derived from the filename instead of the frontmatter, which required a little special handling.
 
 - To access the filename, I used [createFilePath](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L8).
-- I extracted the slug and the date from the filename and them passed along as node fields, available to subsequent page queries.
+- I extracted the slug and the date from the filename and passed them along as node fields, available to subsequent page queries.
 
 ```
-const result  = extractMetadataFromFilename(filePath);
+const result = extractMetadataFromFilename(filePath);
 date = result.date;
 slug = result.slug;
 createNodeField({ node, name: `date`, value: date });
@@ -193,7 +193,7 @@ To test the site out and compare it with my old site, I [deployed](https://epic-
 
 ![Build Command](../images/netlify-build-command.png)
 
-### Testing that No Links Broken
+### Testing that No Links are Broken
 
 With my site deployed to Netlify, I tested that no links would be broken by ensuring that each link on the old site also existed on the new site:
 
@@ -207,7 +207,7 @@ links.forEach(link => {
 });
 ```
 
-I ran the following script on each of the two pages of my blog to extract all the links:
+I ran the following script on each of the two pages of my old blog to extract all the links:
 
 ```
 let links = document.querySelectorAll("a");
@@ -236,11 +236,11 @@ Now that I'm using a system I understand a little better, I want to soon:
 
 - Implement pagination
 - Create categories for pages and allow browsing the blog by category
-- Create a navigation element called `Content` in the header which expands to Blogs, Drawings, Book Reviews
+- Create a navigation element called `Content` in the header which expands to `Blogs`, `Drawings`, `Book Reviews`
 - Create a `Reading List` navigation element
 - Lean enough about CSS and design to create a better landing page (Maybe hire a designer?)
 
-If you'd like to check it out, you can find the source code [here](https://github.com/Deborah-Digges/gatsby-site).
+If you'd like to check it out in more detail, you can find the source code [here](https://github.com/Deborah-Digges/gatsby-site).
 
 Tune in again for more exciting updates to my Gatsby blog!
 

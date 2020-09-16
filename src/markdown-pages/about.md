@@ -1,6 +1,6 @@
 ---
-title : About Me
+title :
 type: SitePage
 ---
 
- 
+

@@ -170,7 +170,7 @@ Again, I invoked the mighty plugin system of Gatsby and added another plugin ent
 {
   resolve: `gatsby-plugin-favicon`,
   options: {
-    logo: "./src/favicon.ico"
+    logo: `./src/favicon.ico`
   }
 }
 ```
@@ -182,9 +182,9 @@ I lazily copied over the [poole/lanyon theme](https://github.com/Deborah-Digges/
 Since these are global CSS styles, I needed to import them into the `gatsby-browser.config.js` file to make them apply to the generated HTML files.
 
 ```
-import "./src/styles/poole.css";
-import "./src/styles/lanyon.css";
-import "./src/styles/Calendas_Plus.otf";
+import './src/styles/poole.css';
+import './src/styles/lanyon.css';
+import './src/styles/Calendas_Plus.otf';
 ```
 
 ### Deploying
@@ -199,7 +199,7 @@ With my site deployed to Netlify, I tested that no links would be broken by ensu
 
 ```
 links.forEach(link => {
-  link = link.replace("deborah-digges.github.io", "epic-mirzakhani-8e39a6.netlify.app");
+  link = link.replace('deborah-digges.github.io', 'epic-mirzakhani-8e39a6.netlify.app');
   request(link, (err, res, body) => {
     if (err) { console.log('Page fetch failed', err); }
     console.log(link, res.statusCode);
@@ -210,7 +210,7 @@ links.forEach(link => {
 I ran the following script on each of the two pages of my old blog to extract all the links:
 
 ```
-let links = document.querySelectorAll("a");
+let links = document.querySelectorAll('a');
 let siteLinks = []
 for (let i=0; i < links.length; i++) {
   let linkText = links[i].textContent;

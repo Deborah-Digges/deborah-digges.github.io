@@ -5,6 +5,6 @@ node_js:
   - "10"
 script: git config --global user.email $GH_EMAIL &&
   git config --global user.name $GH_USERNAME &&
-  git remote set-url origin https://$GH_USERNAME:${{ GH_TOKEN }}@github.com/deborah-digges/deborah-digges.github.io.git &&
+  git remote set-url origin "https://${GH_USERNAME}:${GH_TOKEN}@github.com/deborah-digges/deborah-digges.github.io.git" &&
   yarn install && yarn run deploy
 

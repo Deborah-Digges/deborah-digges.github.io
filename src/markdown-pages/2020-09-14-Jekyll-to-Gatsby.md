@@ -72,14 +72,30 @@ createNodeField({ node, name: `date`, value: date });
 ```
 #### Highlighting
 
-In my old Jekyll site, I was using `pygments` for syntax highlighting of code snippets. Since this no longer worked in Gatsby, I reverted to using the three back-quotes which translates to a `<pre>` tag enclosing a `<code>` blog.
+In my old Jekyll site, I was using `pygments` for syntax highlighting of code snippets, which used syntax like this to create a highlight:
+
+```
+{% highlight C++ %}
+{% raw %}
+void f(int x, int n)
+{
+	Gadget * g = new Gadget{n}; // Look ! I’m a Java Programmer :)
+	if(x < 100) throw std::runtime_error{"weird"}; //leak
+	if(x < 200) return; //leak
+	delete p;
+}
+{% endraw %}
+{% endhighlight %}
+```
+
+Since this no longer worked in Gatsby, I changed all highlights to be enclosed in three back-quotes which translates to a `<pre>` tag enclosing a `<code>` blog.
 
 I would like to eventually embed gists directly into my posts, but that's an improvement for a later blog post.
 
 
 #### Images
 
-To make Gatsby aware of where your images are, I added another plugin entry for the `gatsby-source-filesystem` plugin.
+To make Gatsby aware of where my images were located, I added another plugin entry for the `gatsby-source-filesystem` plugin.
 
 ```
 {
@@ -109,7 +125,7 @@ I then modified the plugin entry for `gatsby-trasformer-remark` to add the `gats
 }
 ```
 
-With this configuration, images can be embedded inline using the familiar markdown format:
+With this configuration, I was able to embed images inline using the familiar markdown format:
 
 ```
 ![Architecture](../images/NN.jpg)
@@ -126,7 +142,7 @@ For the directory structure above, `../images/image.png` would be the path to an
 
 #### Gifs
 
-`gatsby-remark-images` cannot handle gifs. Add the `gatsby-remark-copy-linked-files` to properly handle any gifs that gatsby encounters.
+`gatsby-remark-images` cannot handle gifs. I added the `gatsby-remark-copy-linked-files` to properly handle any gifs that gatsby encountered.
 
 ```
 {
@@ -147,7 +163,7 @@ For the directory structure above, `../images/image.png` would be the path to an
 
 #### Favicon
 
-Again, we invoke the mighty plugin system of Gatsby. Add another plugin entry in `gatsby-config.js`
+Again, I invoked the mighty plugin system of Gatsby and added another plugin entry in `gatsby-config.js`.
 
 ```
 {
@@ -162,7 +178,7 @@ Again, we invoke the mighty plugin system of Gatsby. Add another plugin entry in
 
 I lazily copied over the [poole/lanyon theme](https://github.com/Deborah-Digges/gatsby-site/tree/master/src/styles) to avoid me having to write any CSS. Let's not kid ourselves, I don't really know how to design a site.
 
-Since these are global CSS styles I needed to import them into the `gatsby-browser.config.js` file to make them apply to the generated HTML files.
+Since these are global CSS styles, I needed to import them into the `gatsby-browser.config.js` file to make them apply to the generated HTML files.
 
 ```
 import "./src/styles/poole.css";
@@ -172,13 +188,13 @@ import "./src/styles/Calendas_Plus.otf";
 
 ### Deploying
 
-To test the site out and compare it with my old site, I deployed to [netlify](https://www.netlify.com/). It's about as simple as going to the netlify site, authorizing access to your GitHub repo, and providing a build command.
+To test the site out and compare it with my old site, I [deployed](https://epic-mirzakhani-8e39a6.netlify.app/) the site to [Netlify](https://www.netlify/). It was about as simple as going to the Netlify site, authorizing access to my GitHub repo, and providing a build command.
 
 ![Architecture](../images/netlify-build-command.png)
 
 ### Testing that no links are broken
 
-Now that I have my site deployed, I test that no links are broken, by ensuring each link on the old site also exists on the new site:
+With my site deployed to Netlify, I tested that no links were broken by ensuring that each link on the old site also existed on the new site:
 
 ```
 links.forEach(link => {
@@ -190,9 +206,28 @@ links.forEach(link => {
 });
 ```
 
+To get the list of links, I ran the following script on each of the two pages of my blog to extract all the links:
+
+```
+let links = document.querySelectorAll("a");
+let siteLinks = []
+for (let i=0; i < links.length; i++) {
+  let linkText = links[i].textContent;
+  linkText = linkText.replace(/\s+/g, ' ').trim();
+  const link = links[i].href;
+  siteLinks.push([linkText, link]);
+}
+
+for(let i=0; i < siteLinks.length; i++) {
+  console.log(siteLinks[i][1]);
+}
+```
+
+Admittedly, it's a little rudimentary, but hey! it did the job.
+
 ### Switching over
 
-Once I'm ready to bid adieu to the shackles of my Jekyll site, I will overwrite it with the shiny new Gatsby site. I will be going over the details of deploying a Gatsby site to GitHub Pages in a subsequent blog post!
+Once I was ready to bid adieu to the shackles of my Jekyll site, I overwrote it with the shiny new Gatsby site. I will be going over the details of deploying a Gatsby site to GitHub Pages in a subsequent blog post!
 
 ## Next Up
 
@@ -200,8 +235,8 @@ Now that I'm using a system I understand a little better, I want to soon
 
 - Implement pagination
 - Create categories for pages and allow browsing the blog by category
-- Create a navigation element called Content in the header which expands to Blogs, Drawings, Book Reviews
-- Create a Reading List navigation element
+- Create a navigation element called `Content` in the header which expands to Blogs, Drawings, Book Reviews
+- Create a `Reading List` navigation element
 - Lean enough about CSS and design to create a better landing page (Maybe hire a designer?)
 
 If you'd like to check it out, you can find the source code [here](https://github.com/Deborah-Digges/gatsby-site).

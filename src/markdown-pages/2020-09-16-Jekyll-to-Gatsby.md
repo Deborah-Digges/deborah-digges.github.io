@@ -19,7 +19,7 @@ I considered refurbishing my blog with [Gatsby](https://www.gatsbyjs.com/blog/20
 Getting a Gatsby project up and running is [well-documented](https://www.gatsbyjs.com/docs/quick-start/) on the Gatsby site. Enhancing the project to generate a page from a markdown file is also [clearly explained](https://www.gatsbyjs.com/docs/adding-markdown-pages/).
 These are the steps I followed to get the initial project set up for the blog:
 
-- Used the `gatsby-source-filesystem` plugin to read markdown files into Gatsby. Added an entry to the `plugins` key in `gatsby.config.js`.
+- Used the `gatsby-source-filesystem` plugin to read markdown files into Gatsby. I added an entry to the `plugins` key in `gatsby.config.js`.
 
 ```
 plugins: [{
@@ -51,18 +51,18 @@ plugins: [
 
 - Generated pages for all markdown files using the [`createPage` Gatsby API](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L55).
 
-- Created an [index page](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/pages/index.js) for all blog articles that displays a list of links.
+- Created an [index page](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/pages/index.js) for all blog articles that displayed a list of links.
 
 ### Migrating Content
-I copied all the markdown files from my old website to the folder indicated in the `gatsby-source-filesystem` config entry: `markdown-pages`. I was now able to see all my old blogs being listed on the index page, albeit with many aspects being broken.
+I copied all the markdown files from my old website to the folder indicated in the `gatsby-source-filesystem` config entry: `markdown-pages`. I was now able to see all my old blogs being listed on the index page, but most of the posts themselves looked terribly broken.
 
 ### Fixing All the Things
 
 #### Links
-To avoid breaking links, I used the same slug format as before: `YYYY/MM/DD/Title`. In my case, the slug was derived from the filename instead of the frontmatter, which required a little special handling.
+To avoid breaking links, I used the same slug format that my old Jekyll site used: `YYYY/MM/DD/Title`. In my case, the slug was derived from the filename instead of the frontmatter, which required a little special handling.
 
-- Used [createFilePath](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L8) to access the filename
-- Extracted the slug and the date from the filename and them passed along as node fields, available to subsequent page queries.
+- To access the filename, I used [createFilePath](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L8).
+- I extracted the slug and the date from the filename and them passed along as node fields, available to subsequent page queries.
 
 ```
 const result  = extractMetadataFromFilename(filePath);
@@ -95,7 +95,7 @@ I would like to eventually embed gists directly into my posts, but that's an imp
 
 #### Images
 
-To make Gatsby aware of where my images were located, I added another plugin entry for the `gatsby-source-filesystem` plugin.
+First, I copied over the images from my old site to `src/images`. To make Gatsby aware of where my images were located, I added another plugin entry for the `gatsby-source-filesystem` plugin.
 
 ```
 {
@@ -191,11 +191,11 @@ import "./src/styles/Calendas_Plus.otf";
 
 To test the site out and compare it with my old site, I [deployed](https://epic-mirzakhani-8e39a6.netlify.app/) the site to [Netlify](https://www.netlify/). It was about as simple as going to the Netlify site, authorizing access to my GitHub repo, and providing a build command.
 
-![Architecture](../images/netlify-build-command.png)
+![Build Command](../images/netlify-build-command.png)
 
-### Testing that no links are broken
+### Testing that No Links Broken
 
-With my site deployed to Netlify, I tested that no links were broken by ensuring that each link on the old site also existed on the new site:
+With my site deployed to Netlify, I tested that no links would be broken by ensuring that each link on the old site also existed on the new site:
 
 ```
 links.forEach(link => {

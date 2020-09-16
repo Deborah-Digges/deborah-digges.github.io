@@ -4,7 +4,7 @@ title : "From Jekyll to Gatsby: 7 Simple Steps"
 
 Six years ago, during my final year in college, I was enrolled in a course on Open Source technology. To pass the course was to do two things: contribute to an open source project, and blog about it. Laughably, the only thing that propelled me to start writing publicly was the fear of failing the class.
 
-I passed the course, and managed to get some semblance of a blog together. However, I didn't put too much effort into building the site itself since much of my effort was expended in writing the content and trying to creep my way into open source. At the time, Jekyll was all the rage and I went with a themed Jekyll starter called [Lanyon](https://github.com/poole/lanyon).
+I passed the course and managed to get some semblance of a blog together. However, I didn't put too much effort into building the site itself since much of my effort was expended in writing the content and trying to creep my way into open source. At the time, Jekyll was all the rage and I went with a themed Jekyll starter called [Lanyon](https://github.com/poole/lanyon).
 
 It served me well over the years, but my unfamiliarity with how it worked kept me from making any substantial changes to the structure of the site. I've finally taken the stand to move to a stack I'm more comfortable with.
 
@@ -19,7 +19,7 @@ I considered refurbishing my blog with [Gatsby](https://www.gatsbyjs.com/blog/20
 Getting a Gatsby project up and running is [well-documented](https://www.gatsbyjs.com/docs/quick-start/) on the Gatsby site. Enhancing the project to generate a page from a markdown file is also [clearly explained](https://www.gatsbyjs.com/docs/adding-markdown-pages/).
 These are the steps I followed to get the initial project set up for the blog:
 
-- Used the `gatsby-source-filesystem` plugin to read markdown files into Gatsby. Added an entry to the `plugins`key in `gatsby.config.js`.
+- Used the `gatsby-source-filesystem` plugin to read markdown files into Gatsby. Added an entry to the `plugins` key in `gatsby.config.js`.
 
 ```
 plugins: [{
@@ -47,11 +47,11 @@ plugins: [
 ```
 
 
-- Created a [template](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/templates/blogTemplate.js) for a blog post using React to render the blog post data as a React component
+- Created a [template](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/templates/blogTemplate.js) for blog posts using React to render a blog post's data as a React component.
 
-- Generated pages for all markdown files using the [`createPage` Gatsby API](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L55)
+- Generated pages for all markdown files using the [`createPage` Gatsby API](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L55).
 
-- Created an [index page](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/pages/index.js) for all blog articles that displays a list of links
+- Created an [index page](https://github.com/Deborah-Digges/gatsby-site/blob/master/src/pages/index.js) for all blog articles that displays a list of links.
 
 ### Migrating Content
 I copied all the markdown files from my old website to the folder indicated in the `gatsby-source-filesystem` config entry: `markdown-pages`. I was now able to see all my old blogs being listed on the index page, albeit with many aspects being broken.
@@ -62,7 +62,7 @@ I copied all the markdown files from my old website to the folder indicated in t
 To avoid breaking links, I used the same slug format as before: `YYYY/MM/DD/Title`. In my case, the slug was derived from the filename instead of the frontmatter, which required a little special handling.
 
 - Used [createFilePath](https://github.com/Deborah-Digges/gatsby-site/blob/master/gatsby-node.js#L8) to access the filename
-- Extracted the slug and the date from the filename and them passed along as node fields, available to subsequent page queries
+- Extracted the slug and the date from the filename and them passed along as node fields, available to subsequent page queries.
 
 ```
 const result  = extractMetadataFromFilename(filePath);
@@ -77,13 +77,13 @@ In my old Jekyll site, I was using `pygments` for syntax highlighting of code sn
 ```
 {% highlight C++ %}
 {% raw %}
-void f(int x, int n)
-{
-	Gadget * g = new Gadget{n}; // Look ! I’m a Java Programmer :)
-	if(x < 100) throw std::runtime_error{"weird"}; //leak
-	if(x < 200) return; //leak
-	delete p;
-}
+  void f(int x, int n)
+  {
+    Gadget * g = new Gadget{n}; // Look ! I’m a Java Programmer :)
+    if(x < 100) throw std::runtime_error{"weird"}; //leak
+    if(x < 200) return; //leak
+    delete p;
+  }
 {% endraw %}
 {% endhighlight %}
 ```
@@ -131,18 +131,19 @@ With this configuration, I was able to embed images inline using the familiar ma
 ![Architecture](../images/NN.jpg)
 ```
 
-An important point is that the path to the image within the `src` directory must prefix the image name:
+It's important to use a relative path to the `images` folder.
 
 ```
-- markdown-pages
-- images
+- src
+  - markdown-pages
+  - images
 ```
 
 For the directory structure above, `../images/image.png` would be the path to an image referenced in a markdown file.
 
 #### Gifs
 
-`gatsby-remark-images` cannot handle gifs. I added the `gatsby-remark-copy-linked-files` to properly handle any gifs that gatsby encountered.
+`gatsby-remark-images` cannot handle gifs. I added the `gatsby-remark-copy-linked-files` plugin to properly handle any gifs that gatsby encountered.
 
 ```
 {
@@ -206,7 +207,7 @@ links.forEach(link => {
 });
 ```
 
-To get the list of links, I ran the following script on each of the two pages of my blog to extract all the links:
+I ran the following script on each of the two pages of my blog to extract all the links:
 
 ```
 let links = document.querySelectorAll("a");
@@ -227,11 +228,11 @@ Admittedly, it's a little rudimentary, but hey! it did the job.
 
 ### Switching over
 
-Once I was ready to bid adieu to the shackles of my Jekyll site, I overwrote it with the shiny new Gatsby site. I will be going over the details of deploying a Gatsby site to GitHub Pages in a subsequent blog post!
+Once I was ready to bid adieu to the shackles of my Jekyll site, I overwrote my Github User Pages [repository](https://github.com/Deborah-Digges/deborah-digges.github.io) with the shiny new Gatsby site. I will be going over the details of deploying a Gatsby site to GitHub Pages in a subsequent blog post!
 
 ## Next Up
 
-Now that I'm using a system I understand a little better, I want to soon
+Now that I'm using a system I understand a little better, I want to soon:
 
 - Implement pagination
 - Create categories for pages and allow browsing the blog by category

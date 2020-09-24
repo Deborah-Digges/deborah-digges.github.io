@@ -3,16 +3,16 @@ title: "Gatsby Up & Running: Creating a CD Pipeline"
 ---
 <!-- Continuously deploy your Gatsby site to GitHub pages using TravisCI -->
 
-In my [previous post](https://deborah-digges.github.io/2020/09/16/Jekyll-to-Gatsby), I walked through how I migrated my crufty Jekyll site to Gatsby. I talked briefly about how I deployed the new site to GitHub Pages, but was resolved to write a separate post to delve into the specifics.
+In my [previous post](https://deborah-digges.github.io/2020/09/16/Jekyll-to-Gatsby), I walked through how I migrated my crufty Jekyll site to Gatsby. I talked briefly about how I deployed the new site to GitHub Pages, but resolved to write a separate post to delve into the specifics.
 
 ## Why GitHub Pages?
 
-I've always used GitHub pages to host my blog because it's lightweight and integrates seamlessly with GitHub workflows. It is allows some configuration, like adding a custom domain that makes it sufficient for my current static site hosting needs.
+I've always used GitHub Pages to host my blog because it's lightweight and integrates seamlessly with GitHub. It allows some configuration, like adding a custom domain that makes it sufficient for my current static site hosting needs.
 
 
 ## Deploying Locally
 
-Before pushing to GitHub Pages, I added an entry to the `scripts` tag in `package.json` which creates a production-ready build for my Gatsby site.
+I added an entry to the `scripts` tag in `package.json` which creates a production-ready build for my Gatsby site.
 
 ```
 "scripts": {
@@ -21,18 +21,17 @@ Before pushing to GitHub Pages, I added an entry to the `scripts` tag in `packag
 }
 ```
 
-```npm run build``` will build the site and place the generated assets in a folder called `public`. Copying this `public` folder to any HTTP server would effectively deploy my site to that server.
+```npm run build``` build the site and places the generated assets in a folder called `public`. Copying this `public` folder to any HTTP server would deploy my site to that server.
 
 For example, running these commands will start an HTTP server serving the assets in `public`.
 
 ```
 npm install -g http-server
 cd public
-http-server
 ```
 
 ```
-➜  public git:(master) ✗ http-server
+➜  http-server
 Starting up http-server, serving ./
 Available on:
   http://127.0.0.1:8082
@@ -73,7 +72,7 @@ mv public /tmp
 # Remove all other files
 rm -r *
 
-# Move the contents of the public folder
+# Move the contents of the public folder back to the root of the directory
 cp -r  /tmp/public/* .
 
 git commit -m "Release new version of blog"
@@ -121,17 +120,17 @@ I decided to continously deploy my site, which means that every new commit would
 
 I decided to go with Travis since it seemed simple enough to get started with.
 
-### Signing Up
+#### Signing Up
 
 I signed up on the [Travis CI](https://travis-ci.org/) website with my GitHub account and consented to sharing my GitHub data with Travis.
 
-### Enabling the Repository
+#### Enabling the Repository
 
 I then headed to the [repositories](https://travis-ci.org/account/repositories) page and enabled builds for the `deborah-digges.github.io` repository.
 
 ![Travis Toggle](../images/travis-toggle.png)
 
-### Add travis.yml file
+#### Adding the travis.yml file
 
 I added a `travis.yml` file to the root of my repository to tell Travis what to do on every commit to `master`.
 
@@ -147,7 +146,7 @@ script: git config --global user.email $GH_EMAIL 2> /dev/null &&
   yarn install && yarn run deploy 2> /dev/null
 ```
 
-The `script` tag is essentially running the `yarn run deploy` step that we previously used to deploy our site locally. It is doing some additional configuration to give the Travis CI the right access to push to my GitHub repository.
+The `script` tag runs the `yarn run deploy` step that I previously used to deploy my site locally. It is doing some additional configuration to give the Travis CI the right access to push to my GitHub repository.
 
 I told the `git` client installed on Travis CI who I was.
 ```
@@ -163,7 +162,7 @@ git remote set-url origin "https://${GH_USERNAME}:${GH_TOKEN}@github.com/deborah
 
 So, where are these environment variables coming from?
 
-### Configuring Travis Environment Variables
+#### Configuring Travis Environment Variables
 
 
 I headed to my repository settings and made the following environment variables available to my script

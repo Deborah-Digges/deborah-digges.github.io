@@ -51,13 +51,8 @@ I added the dependency to my project to give it a spin.
 
 To let `gh-pages` know where my repository was located, I  added the `homepage` property in `package.json`.
 
-```
-{
-  ...
-  "homepage": "deborah-digges.github.io",
-  ...
-}
-```
+`gist:Deborah-Digges/41a4775a088c66960146c5dc10f1c232#package.json-snippet2`
+
 
 I added another script `deploy` to my `package.json` which does a `build` and then pushes the `public` folder to the `gh-pages` branch of my repository on Github.
 
@@ -72,25 +67,25 @@ Great! I deployed my Gatsby site! However, I wouldn't want to be deploying a sit
 
 I decided to [continously deploy](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment) my site so that every new commit would automatically be deployed to my GitHub Pages site. This was exciting, but I had bypassed an important step which is having automated tests for my site to ensure that a bad commit did not bring down my entire blog. However, I decided to live *dangerously* and keep the testing of my Gatsby site for a future blog post.
 
-### Continously Deploying with Travis CI
+### Deploying Continuously with Travis CI
 
-#### Signing Up
+### Signing Up
 
 I signed up on the [Travis CI](https://travis-ci.org/) website with my GitHub account and consented to sharing my GitHub data with Travis.
 
-#### Enabling the Repository
+### Enabling the Repository
 
 I then headed to the [repositories](https://travis-ci.org/account/repositories) page and enabled builds for the `deborah-digges.github.io` repository.
 
 ![Travis Toggle](../images/travis-toggle.png)
 
-#### Adding the travis.yml file
+### Adding the travis.yml file
 
 I added a `travis.yml` file to the root of my repository to tell Travis what to do on every commit to `master`.
 
 `gist:Deborah-Digges/41a4775a088c66960146c5dc10f1c232#.travis.yml`
 
-The `script` tag runs the `yarn run deploy` step that I previously used to deploy our site locally. It is doing some additional configuration to give the Travis CI the right access to push to my GitHub repository.
+The `script` runs the `yarn run deploy` step that I previously used to deploy my site locally. It is doing some extra steps to give Travis CI the right access to push to my GitHub repository.
 
 It tells the `git` client installed on Travis CI who I am.
 
@@ -104,7 +99,7 @@ To provide the script push access to my GitHub repository, I embedded my [Github
 
 Where did these environment variables come from?
 
-#### Configuring Travis Environment Variables
+### Configuring Travis Environment Variables
 
 I headed to my repository settings and made the following environment variables available to my script.
 

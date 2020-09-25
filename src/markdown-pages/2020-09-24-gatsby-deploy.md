@@ -22,7 +22,7 @@ I started an HTTP server using [http-server](https://www.npmjs.com/package/http-
 
 `gist:Deborah-Digges/41a4775a088c66960146c5dc10f1c232#run-server`
 
-## Deploying to Github Pages
+## Deploying Manually to Github Pages
 
 ### Setting up Github Pages
 
@@ -61,13 +61,11 @@ I added another script `deploy` to my `package.json` which does a `build` and th
 
 And voila! I was able to deploy my site manually from my computer using the `npm run deploy` script. My site was then up and running at [deborah-digges.github.io](http://deborah-digges.github.io/)
 
-## ✨Continuously✨ Deploying
+## ✨Continuously✨ Deploying with Travis CI
 
 Great! I deployed my Gatsby site! However, I wouldn't want to be deploying a site manually from my laptop on a Friday afternoon.
 
 I decided to [continously deploy](https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment) my site so that every new commit would automatically be deployed to my GitHub Pages site. This was exciting, but I had bypassed an important step which is having automated tests for my site to ensure that a bad commit did not bring down my entire blog. However, I decided to live *dangerously* and keep the testing of my Gatsby site for a future blog post.
-
-### Deploying Continuously with Travis CI
 
 ### Signing Up
 

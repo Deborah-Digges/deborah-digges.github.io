@@ -7,4 +7,4 @@ The source code for my blog at [deborah-digges.github.io](https://deborah-digges
 - Gatsby
 
 # Deployed With
-- Travis CI
+- GitHub Actions

@@ -91,7 +91,7 @@ It didn't prove too hard to find a community-build action for this purpose and i
 Even with this small project, I’ve reaped the benefits of GitHub Actions:
 
 - My blog's build process no longer has a dependency on Travis CI. I was able to disable the repository on Travis CI and also delete my account.
-- I was able to [removed the code](https://github.com/Deborah-Digges/deborah-digges.github.io/commit/d421e5570f9c2c9f68e59f2ebc3078fd65d642ba
+- I was able to [remove the code](https://github.com/Deborah-Digges/deborah-digges.github.io/commit/d421e5570f9c2c9f68e59f2ebc3078fd65d642ba
 ) and knowledge about how to deploy to Github Pages within my project by reusing a shared workflow built by someone else.
 
 I’m excited to have explored GitHub actions and what it’s capable of by re-using an existing workflow. Join me in my next blog post to explore how to write a custom workflow from scratch!

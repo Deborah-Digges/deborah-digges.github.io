@@ -12,8 +12,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build && gh-pages -d public"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
     "gatsby": "^2.24.50",
@@ -27,7 +26,6 @@
     "gatsby-source-filesystem": "^2.3.27",
     "gatsby-transformer-remark": "^2.8.32",
     "gatsby-transformer-sharp": "^2.5.14",
-    "gh-pages": "^3.1.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },

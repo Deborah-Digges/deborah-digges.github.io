@@ -1,7 +1,6 @@
 ---
 title: "Gatsby Up & Running: Creating a CD Pipeline"
 ---
-<!-- Continuously deploy your Gatsby site to GitHub pages using TravisCI -->
 
 My [last adventure](https://deborah-digges.github.io/2020/09/16/Jekyll-to-Gatsby) was migrating my crufty Jekyll site to Gatsby. I used to deploy my Jekyll site manually by building it locally and pushing the generated static content to the `gh-pages` branch on GitHub. With my new site in place, I decided it was time to leave my old ways behind and set up an automated pipeline to deploy my site to GitHub pages.
 

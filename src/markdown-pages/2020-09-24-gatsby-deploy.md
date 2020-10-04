@@ -21,7 +21,7 @@ I started an HTTP server using [http-server](https://www.npmjs.com/package/http-
 
 `gist:Deborah-Digges/41a4775a088c66960146c5dc10f1c232#run-server`
 
-## Deploying Manually to Github Pages
+## Deploying Manually to GitHub Pages
 
 ### Setting up Github Pages
 

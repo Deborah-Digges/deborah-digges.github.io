@@ -42,11 +42,11 @@ I’ve gone over how I configured my blog's GitHub repository to use Travis CI i
 
 ![Travis CI Webhook](../images/travis-toggle.png)
 
-When I enabled my repository for builds in the Travis CI dashboard, it set up a Webhook configuration in the repository.
+When I enabled my repository for builds in the Travis CI dashboard, it set up a Webhook configuration in the repository on Github.
 
 ![Travis CI Webhook](../images/travis-ci-webhook.png)
 
-This configuration causes events generated on this repository to be pushed to a Travis CI hosted webhook, that will trigger a build based on the steps defined in my `.travis.yml` file.
+This configuration caused events generated on this repository to be pushed to a Travis CI hosted webhook, that triggered a build based on the steps defined in my `.travis.yml` file.
 
 ## Using a GitHub Action to Trigger a Travis CI Build
 
@@ -59,30 +59,32 @@ The dependency remains as do the problems related with it. People were quick to 
 
 ## Using a GitHub Action to Deploy My Gatsby Site (Goodbye, Travis)
 
-To eliminate the dependency on Travis CI, I began looking for a GitHub Action that could perform the same functionality as my Travis CI build and deploy pipeline: run a build, run some tests (that don't exist yet), deploy the generated site to `gh-pages`.
+To eliminate the dependency on Travis CI, I began looking for a GitHub Action that could perform the same functionality as my Travis CI build and deploy pipeline: run a build, run some tests (that don't exist yet), push the generated site to the `gh-pages` branch of my GitHub repository.
 
 It didn't prove too hard to find a community-build action for this purpose and integrate my repository with it:
 
-- Disabled the Travis CI build in my [Travis CI settings](https://travis-ci.org/account/repositories) which disabled the corresponding Webhook in Github.
+- First off, I disabled the Travis CI build in my [Travis CI settings](https://travis-ci.org/account/repositories) which disabled the corresponding Webhook in Github.
 
 ![Travis CI Disable Toggle](../images/disable-travis-ci-build.png)
 
 ![Travis CI Disabled Webhook](../images/disabled-travis-ci-hook.png)
 
 
-- Searched on the [GitHub Actions Marketplace](https://github.com/marketplace) for a [suitable action](https://github.com/marketplace/actions/gatsby-publish) to deploy a Gatsby site to GitHub Pages.
+- I then searched on the [GitHub Actions Marketplace](https://github.com/marketplace) for a [suitable action](https://github.com/marketplace/actions/gatsby-publish) to deploy a Gatsby site to GitHub Pages.
 
-- Added the action to a YAML file in my repository under [.github/workflows](https://github.com/Deborah-Digges/deborah-digges.github.io/blob/master/.github/workflows/build_and_publish.yml)
-
+- I added the action to a YAML file in my repository under [.github/workflows](https://github.com/Deborah-Digges/deborah-digges.github.io/blob/master/.github/workflows/build_and_publish.yml).
 `gist:Deborah-Digges/6e4f6572b7e75925ed8aa3f5411cbcc8`
 
-- Added the environment variable `ACCESS_TOKEN` to my GitHub repository `Secrets` with a personal [GitHub token](https://github.com/settings/tokens/).
+I was a little disappointed with this step as I was hoping for a one-click option in the marketplace which would allow me to commit a workflow file to my repository.
+
+![GitHub Action Setup](../images/github-action-setup.png)
+
+- To give the workflow the ability to push to my repository, I added the environment variable `ACCESS_TOKEN` to my GitHub repository `Secrets` with a personal [GitHub token](https://github.com/settings/tokens/).
 
 
 ![GitHub Repository Secrets Tab](../images/github-repository-secrets.png)
 
-
-- Triggered a build by pushing a new commit to master!
+- With all that out of the way, I was able to trigger my first build by merging to the master branch of my repository!
 
 ![GitHub Actions Build in Progress](../images/github-actions-progress.png)
 
@@ -91,7 +93,7 @@ It didn't prove too hard to find a community-build action for this purpose and i
 Even with this small project, I’ve reaped the benefits of GitHub Actions:
 
 - My blog's build process no longer has a dependency on Travis CI. I was able to disable the repository on Travis CI and also delete my account.
-- I was able to [removed the code](https://github.com/Deborah-Digges/deborah-digges.github.io/commit/d421e5570f9c2c9f68e59f2ebc3078fd65d642ba
+- I was able to [remove the code](https://github.com/Deborah-Digges/deborah-digges.github.io/commit/d421e5570f9c2c9f68e59f2ebc3078fd65d642ba
 ) and knowledge about how to deploy to Github Pages within my project by reusing a shared workflow built by someone else.
 
 I’m excited to have explored GitHub actions and what it’s capable of by re-using an existing workflow. Join me in my next blog post to explore how to write a custom workflow from scratch!

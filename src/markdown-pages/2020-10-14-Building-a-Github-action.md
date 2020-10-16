@@ -97,24 +97,24 @@ An action is the smallest standalone component in a workflow. As we saw above, i
 Here, you write the code for the action in Javascript. This code is executed using the version of node you specify in the action.yml (more on this later). The version of node supported is mentioned in the [runner specification](https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners).
 
 There are a few drawbacks to this approach.
-1. The action is dependent on version of Node available on the runner. Using the Github runner will give you some version of node out of the box. But if you use your own runner, some Javascript actions written for a particular Javascript version may not work correctly.
-2. Dependencies need to packaged with the action (either by including the node\_modules folder in the action repository or by packaging the node\_modules folder into a single file using vercel)
+1. The action is dependent on the version of Node available on the runner. If you use your own runner running node 10, Javascript actions written for node 12 will not work correctly.
+2. Dependencies need to packaged with the action (either by including the node\_modules folder in the action repository or by packaging the node\_modules folder into a single file using [vercel/ncc](https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/creating-a-javascript-action#commit-tag-and-push-your-action-to-github))
 
 ### Docker Container Action
 
-Docker containers bundle the environment and code of a GitHub action together which makes it a more reliable way of packaging an action. The consumer of the action does not need to worry about the tools or dependencies used in the action. For example, if the action specified a version of node that was 12 but was run on a non standard runner which ran node 10, this would cause issues. Using a Docker container which bundled the correct version of node with the action would avoid such issues.
+Docker containers bundle the environment and code of a GitHub action together which makes it a more reliable way of packaging an action. The consumer of the action does not need to worry about the tools or dependencies used in the action. For example, if the action specified a node version of 12 but was run on a non standard runner which ran node 10, this would cause issues. Using a Docker container which bundled the correct version of node with the action would avoid such issues.
 
 
 ## Creating a Javascript Action
 
 In a [previous post](https://deborah-digges.github.io/2015/10/23/pr-bot), I described how I set up a GitHub webhook to comment on pull requests opened by new contributors on a repository. We're going to recreate this behavior using a GitHub Action.
 
-### Initializing
+### Initializing The Repository
 
 1. Create an empty folder
 2. Inside the folder: `npm init -y`
 
-### Describing our Action
+### Describing Our Action
 Create an `action.yml` file in the same folder. This file contains metadata that describes the intent of this action, its inputs, and its outputs.
 
 `gist:Deborah-Digges/342ad72d6960e733dbf0634bc2b0e7b3`

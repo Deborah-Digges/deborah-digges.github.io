@@ -22,7 +22,7 @@ Events are fundamental to the extensibility of a product. They allow you to exte
 
 [GitHub](http://github.com/) provides hosting for software projects and version control using git. It has formed the nucleus of the software development lifecycle by supporting collaboration across teams (often distributed), code reviews, and project management.
 
-GitHub events play a big part in helping GitHub do what it does best while also providing extensibility points to integrate with other tools used in the software development lifecycle. You might use GitHub for collaborating on the source code, JIRA for project management, and Confluence for documenting processes. GitHub events help you extend typical activites performed on GitHub to hook into these other tools that you already use.
+[GitHub events](https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/webhook-events-and-payloads) play a big part in helping GitHub do what it does best while also providing extensibility points to integrate with other tools used in the software development lifecycle. You might use GitHub for collaborating on the source code, JIRA for project management, and Confluence for documenting processes. GitHub events help you extend typical activities performed on GitHub to hook into these other tools that you already use.
 
 > “Each event corresponds to a certain set of actions that can happen to your organization and/or repository. For example, if you subscribe to the issues event you'll receive detailed payloads every time an issue is opened, closed, labeled, etc.” - The GitHub Events Documentation
 

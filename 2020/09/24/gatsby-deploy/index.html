@@ -1,0 +1,637 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.80fd1014c64f5a855bee.css">*{box-sizing:border-box}body,html{margin:0;padding:0}html{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5}@media (min-width:38em){html{font-size:20px}}body{color:#515151;background-color:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a{color:#268bd2;text-decoration:none}a strong{color:inherit}a:focus,a:hover{text-decoration:underline}h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-weight:700;line-height:1.25;text-rendering:optimizeLegibility}h1{font-size:2rem}h2{margin-top:1rem;font-size:1.5rem}h3{margin-top:1.5rem;font-size:1.25rem}h4,h5,h6{margin-top:1rem;font-size:1rem}p{margin-top:0;margin-bottom:1rem}strong{color:#303030}dl,ol,ul{margin-top:0;margin-bottom:1rem}dt{font-weight:700}dd{margin-bottom:.5rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}abbr{font-size:85%;font-weight:700;color:#555;text-transform:uppercase}abbr[title]{cursor:help;border-bottom:1px dotted #e5e5e5}code,pre{font-family:Menlo,Monaco,Courier New,monospace}code{padding:.25em .5em;font-size:85%;color:#bf616a;border-radius:3px}code,pre{background-color:#f9f9f9}pre{display:block;margin-top:0;margin-bottom:1rem;padding:1rem;font-size:.8rem;line-height:1.4;white-space:pre;white-space:pre-wrap;word-break:break-all;word-wrap:break-word}pre code{padding:0;font-size:100%;color:inherit;background-color:transparent}.highlight{margin-bottom:1rem;border-radius:4px}.highlight pre{margin-bottom:0}.gist .gist-file{font-family:Menlo,Monaco,Courier New,monospace!important}.gist .markdown-body{padding:15px}.gist pre{padding:0;background-color:transparent}.gist .gist-file .gist-data{font-size:.8rem!important;line-height:1.4}.gist code{padding:0;color:inherit;background-color:transparent;border-radius:0}blockquote{padding:.5rem 1rem;margin:.8rem 0;color:#7a7a7a;border-left:.25rem solid #e5e5e5}blockquote p:last-child{margin-bottom:0}@media (min-width:30em){blockquote{padding-right:5rem;padding-left:1.25rem}}img{display:block;max-width:100%;margin:0 0 1rem;border-radius:5px}table{margin-bottom:1rem;width:100%;border:1px solid #e5e5e5;border-collapse:collapse}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}.lead{font-size:1.25rem;font-weight:300}.message{margin-bottom:1rem;padding:1rem;color:#717171;background-color:#f9f9f9}.container{max-width:38rem;padding-left:1rem;padding-right:1rem;margin-left:auto;margin-right:auto}body,html{overflow-x:hidden}html{font-family:"PT Serif",Georgia,Times New Roman,serif}h1,h2,h3,h4,h5,h6{font-family:Calendas_Plus,Helvetica,Arial,sans-serif;font-weight:400;color:#313131;letter-spacing:-.025rem}.wrap{position:relative;width:100%}.container{max-width:28rem}@media (min-width:38em){.container{max-width:32rem}}@media (min-width:56em){.container{max-width:38rem}}.masthead{padding-top:1rem;padding-bottom:1rem;margin-bottom:3rem;border-bottom:1px solid #eee;background-color:#fbfbfb}.masthead-container{margin-right:1rem;margin-left:1rem;display:flex;justify-content:space-between;align-items:center}.masthead-nav{display:flex}.masthead-nav h4{margin-left:2em}.masthead-title{margin-top:0;margin-bottom:0;color:#505050}.masthead-title a{color:#505050}.masthead-title small{font-size:75%;font-weight:400;color:silver;letter-spacing:0}@media (max-width:48em){.masthead-title{text-align:center}}.page,.post{margin-bottom:4em}.page-title,.post-title,.post-title a{color:#303030}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-.5rem;margin-bottom:1rem;color:#9a9a9a}.related{padding-top:2rem;padding-bottom:2rem;border-top:1px solid #eee}.related-posts{padding-left:0;list-style:none}.related-posts h3{margin-top:0}.related-posts li small{font-size:75%;color:#999}.related-posts li a:hover{color:#268bd2;text-decoration:none}.related-posts li a:hover small{color:inherit}img{clear:both;margin:0 auto}.align-center{text-align:center}.disclaimer-header{background-color:#bd6666;padding:2%;margin:5%;color:#fff;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}@font-face{font-family:Calendas_Plus;src:url(/static/Calendas_Plus-4988e3b187a55c809d2358cfa8e2d340.otf) format("opentype")}</style><meta name="generator" content="Gatsby 2.24.53"/><link href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css" rel="stylesheet"/><link rel="shortcut icon" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="48x48" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/favicon-48x48.png"/><link rel="manifest" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/manifest.json"/><meta name="mobile-web-app-capable" content="yes"/><meta name="theme-color" content="#fff"/><meta name="application-name" content="gatsby-starter-hello-world"/><link rel="apple-touch-icon" sizes="57x57" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-152x152.png"/><link rel="apple-touch-icon" sizes="167x167" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-167x167.png"/><link rel="apple-touch-icon" sizes="180x180" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-180x180.png"/><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-1024x1024.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="apple-mobile-web-app-title" content="gatsby-starter-hello-world"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-640x1136.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-750x1334.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-828x1792.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1125x2436.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1242x2208.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1242x2688.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1536x2048.png"/><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1668x2224.png"/><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1668x2388.png"/><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2048x2732.png"/><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1620x2160.png"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1136x640.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1334x750.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1792x828.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2436x1125.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2208x1242.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2688x1242.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2048x1536.png"/><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2224x1668.png"/><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2388x1668.png"/><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2732x2048.png"/><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2160x1620.png"/><link as="script" rel="preload" href="/webpack-runtime-c4214cb327f2e6d8ac3f.js"/><link as="script" rel="preload" href="/styles-1211262dd08146354a2f.js"/><link as="script" rel="preload" href="/framework-8c8d363c63d1a9a80d21.js"/><link as="script" rel="preload" href="/app-87bfdd4843fee3732aae.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-2a78e23ce79482fd97dd.js"/><link as="fetch" rel="preload" href="/page-data/2020/09/24/gatsby-deploy/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><body class="theme-base-13 sidebar-overlay"><div class="wrap"><div class="masthead"><div class="masthead-container"><h1 class="masthead-title"><a title="Home" href="/">Deb&#x27;s</a> <small>Doodles</small></h1><div class="masthead-nav"><h2 class="masthead-title"><a href="/about">About</a></h2></div></div></div><div class="container content"><div class="post"><h1 class="post-title">Gatsby Up &amp; Running: Creating a CD Pipeline</h1><span class="post-date">2020-09-24</span><div><p>My <a href="https://deborah-digges.github.io/2020/09/16/Jekyll-to-Gatsby">last adventure</a> was migrating my crufty Jekyll site to Gatsby. I used to deploy my Jekyll site manually by building it locally and pushing the generated static content to the <code>gh-pages</code> branch on GitHub. With my new site in place, I decided it was time to leave my old ways behind and set up an automated pipeline to deploy my site to GitHub pages.</p>
+<h2>Why GitHub Pages?</h2>
+<p>I've always used GitHub Pages to host my blog because it's lightweight and integrates seamlessly with GitHub. It is simple, free, and provides free goodies like enforcing HTTPS by default and also supports adding a custom domain.</p>
+<h2>Deploying Locally</h2>
+<p>Before automating the deployment of my new Gatsby site, I learned how to deploy it locally. To do this, I added an entry to the <code>scripts</code> tag in <code>package.json</code> which creates a production-ready build for my Gatsby site.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-package-json-snippet1" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-package-json-snippet1-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-package-json-snippet1-LC1" class="blob-code blob-code-inner js-file-line">&quot;scripts&quot;: {</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet1-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-package-json-snippet1-LC2" class="blob-code blob-code-inner js-file-line">  ...</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet1-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-package-json-snippet1-LC3" class="blob-code blob-code-inner js-file-line">  &quot;build&quot;: &quot;gatsby build&quot;,</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet1-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-package-json-snippet1-LC4" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/package.json-snippet1" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-package-json-snippet1">package.json-snippet1</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p><code>npm run build</code> builds the site and places the generated assets in a folder called <code>public</code>. Copying this <code>public</code> folder to any HTTP server would deploy my site to that server.</p>
+<p>I started an HTTP server using <a href="https://www.npmjs.com/package/http-server">http-server</a> to serve the assets in the <code>public</code> folder which effectively deployed my site locally.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-run-server" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-run-server-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-run-server-LC1" class="blob-code blob-code-inner js-file-line">➜  cd public</td>
+      </tr>
+      <tr>
+        <td id="file-run-server-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-run-server-LC2" class="blob-code blob-code-inner js-file-line">➜  http-server</td>
+      </tr>
+      <tr>
+        <td id="file-run-server-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-run-server-LC3" class="blob-code blob-code-inner js-file-line">Starting up http-server, serving ./</td>
+      </tr>
+      <tr>
+        <td id="file-run-server-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-run-server-LC4" class="blob-code blob-code-inner js-file-line">Available on:</td>
+      </tr>
+      <tr>
+        <td id="file-run-server-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-run-server-LC5" class="blob-code blob-code-inner js-file-line">  http://127.0.0.1:8082</td>
+      </tr>
+      <tr>
+        <td id="file-run-server-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-run-server-LC6" class="blob-code blob-code-inner js-file-line">  http://10.10.10.10:8082</td>
+      </tr>
+      <tr>
+        <td id="file-run-server-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-run-server-LC7" class="blob-code blob-code-inner js-file-line">  http://192.168.13.12:8082</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/run-server" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-run-server">run-server</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<h2>Deploying Manually to GitHub Pages</h2>
+<h3>Setting up Github Pages</h3>
+<p>I already had GitHub pages set up since I used it for my Jekyll site but I will go over the steps here for completeness.</p>
+<p>I headed to my GitHub repository's settings page and scrolled down to the <code>GitHub Pages</code> section.
+<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5ecbd0de70fc4dd9b3de070a00b0424e/d50e7/github-repository.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 13%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAkElEQVQI112MSw7CMBBDe//zIZAQLICCQKVNJpmmzQdMHLFALJ48tjXujjfB4Wqx7w12F4vtWbA5meotjCi8Kpz/Q2eI801/c2adcQGPUTBVndyC/j7iKQGD4Vio8FkxhwU6h5ZZcVhjhrEOWnP2HCyvN7qSInLOKIUkpLg2zTki1S6SyDt9oV/bD5UZe8KND5GM5wGJOUXuAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="GitHub Repository"
+        title="GitHub Repository"
+        src="/static/5ecbd0de70fc4dd9b3de070a00b0424e/5a190/github-repository.png"
+        srcset="/static/5ecbd0de70fc4dd9b3de070a00b0424e/772e8/github-repository.png 200w,
+/static/5ecbd0de70fc4dd9b3de070a00b0424e/e17e5/github-repository.png 400w,
+/static/5ecbd0de70fc4dd9b3de070a00b0424e/5a190/github-repository.png 800w,
+/static/5ecbd0de70fc4dd9b3de070a00b0424e/c1b63/github-repository.png 1200w,
+/static/5ecbd0de70fc4dd9b3de070a00b0424e/29007/github-repository.png 1600w,
+/static/5ecbd0de70fc4dd9b3de070a00b0424e/d50e7/github-repository.png 2280w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I did not want the files generated by the Gatsby build process to clutter up my <code>master</code> branch so I chose the <code>gh-pages</code> branch as the source branch for my GitHub Pages site. Any static site I pushed to this branch would then be published at <code>deborah-digges.github.io</code>. I also liked the fact that <code>Enforce HTTPS</code> was enabled by default. All the security!</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/964205228aeb9f61b8d756c602fe9a1b/a88f6/github-pages-config.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAABYlAAAWJQFJUiTwAAABsUlEQVQ4y6WTCW+bQBCF+f//rofaSFUj2+yCUwwLe3Ds9Tqz0Cip06pRjT7NgvB43rznSkoBKSUGpfDeT875jqodFnSDxq3rYK2FMRrWGGg9FfjZOE6YRr43pfJ9CIE6vm4Kbviw1vhqTvisvhU+GYGPWuDDVBe+OIFHL/CdeAxyh87n1OKSrzgTXE+5hc0zqsvaoA0dGk9QlXGETCNEUKiJJil0GAmuA54Orrl/RUvMaUUl6oZkaEyK5BkLzZIGBTNpOJJotS1oF2HnXGT+ibLDXo1or09o2iusm3HraYIfHZZ1hbGOduURU0SICSHRrv5yJW5YCwkhdpcNmWGKMWyKhnELxjnBx/zPrlc9yeOJuHrvi3ueobMPkUg0YX4zIr+T6L3KkUxL0mKM701hicldw0tdg+lpdyVnJHWadlh2yeC0Z1Afq7C0CkUmzVs6pL6Q/Ov3uLv3gb5ki+yUUiEepDt2E142LKYYt2KZ59Lsf/92RfJZdjidzyU2LG+gGDHqoKd83kZXIsT7dvNOCPG58bNKnjAfkljmtm3YyN1t8+XMTm80+bJFMu1e8ltT/gTpfUIRezZrBwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="GitHub Pages Config"
+        title="GitHub Pages Config"
+        src="/static/964205228aeb9f61b8d756c602fe9a1b/5a190/github-pages-config.png"
+        srcset="/static/964205228aeb9f61b8d756c602fe9a1b/772e8/github-pages-config.png 200w,
+/static/964205228aeb9f61b8d756c602fe9a1b/e17e5/github-pages-config.png 400w,
+/static/964205228aeb9f61b8d756c602fe9a1b/5a190/github-pages-config.png 800w,
+/static/964205228aeb9f61b8d756c602fe9a1b/c1b63/github-pages-config.png 1200w,
+/static/964205228aeb9f61b8d756c602fe9a1b/29007/github-pages-config.png 1600w,
+/static/964205228aeb9f61b8d756c602fe9a1b/a88f6/github-pages-config.png 1900w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>Deploying Manually</h3>
+<p>I deployed the site manually to GitHub Pages by building the site locally and pushing <em>only</em> the <code>public</code> folder to the <code>gh-pages</code> branch on GitHub.</p>
+<p>This required a rather awkward sequence of commands.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-manual-deploy-sh" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-shell  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-manual-deploy-sh-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-manual-deploy-sh-LC1" class="blob-code blob-code-inner js-file-line">git checkout -b gh-pages</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-manual-deploy-sh-LC2" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-manual-deploy-sh-LC3" class="blob-code blob-code-inner js-file-line">gatsby build</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-manual-deploy-sh-LC4" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-manual-deploy-sh-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Temporarily move the public folder</span></td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-manual-deploy-sh-LC6" class="blob-code blob-code-inner js-file-line">mv public /tmp</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-manual-deploy-sh-LC7" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-manual-deploy-sh-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Remove all other files</span></td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-manual-deploy-sh-LC9" class="blob-code blob-code-inner js-file-line">rm -r <span class="pl-k">*</span></td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-manual-deploy-sh-LC10" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-manual-deploy-sh-LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Move the contents of the public folder back to the root of the directory</span></td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-manual-deploy-sh-LC12" class="blob-code blob-code-inner js-file-line">cp -r  /tmp/public/<span class="pl-k">*</span> <span class="pl-c1">.</span></td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-manual-deploy-sh-LC13" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-manual-deploy-sh-LC14" class="blob-code blob-code-inner js-file-line">git commit -m <span class="pl-s"><span class="pl-pds">&quot;</span>Release new version of blog<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-manual-deploy-sh-LC15" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-manual-deploy-sh-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-manual-deploy-sh-LC16" class="blob-code blob-code-inner js-file-line">git push origin gh-pages</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/manual-deploy.sh" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-manual-deploy-sh">manual-deploy.sh</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>That's a mouthful and it's easy to go and accidentally nuke your whole computer with commands like <code>rm -r *</code>. It's a good thing the <a href="https://www.npmjs.com/package/gh-pages">gh-pages</a> package exists to save us from ourselves.</p>
+<p>I added the dependency to my project to give it a spin.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-yarn-add-sh" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-shell  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-yarn-add-sh-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-yarn-add-sh-LC1" class="blob-code blob-code-inner js-file-line">yarn add gh-pages</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/yarn-add.sh" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-yarn-add-sh">yarn-add.sh</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>To let <code>gh-pages</code> know where my repository was located, I  added the <code>homepage</code> property in <code>package.json</code>.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-package-json-snippet2" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-package-json-snippet2-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-package-json-snippet2-LC1" class="blob-code blob-code-inner js-file-line">{</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet2-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-package-json-snippet2-LC2" class="blob-code blob-code-inner js-file-line">  ...</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet2-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-package-json-snippet2-LC3" class="blob-code blob-code-inner js-file-line">  &quot;homepage&quot;: &quot;deborah-digges.github.io&quot;,</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet2-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-package-json-snippet2-LC4" class="blob-code blob-code-inner js-file-line">  ...</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet2-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-package-json-snippet2-LC5" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/package.json-snippet2" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-package-json-snippet2">package.json-snippet2</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>I added another script <code>deploy</code> to my <code>package.json</code> which does a <code>build</code> and then pushes the <code>public</code> folder to the <code>gh-pages</code> branch of my repository on Github.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-package-json-snippet3" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-text  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-package-json-snippet3-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-package-json-snippet3-LC1" class="blob-code blob-code-inner js-file-line">&quot;scripts&quot;: {</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet3-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-package-json-snippet3-LC2" class="blob-code blob-code-inner js-file-line">  &quot;build&quot;: &quot;gatsby build&quot;,</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet3-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-package-json-snippet3-LC3" class="blob-code blob-code-inner js-file-line">  &quot;deploy&quot;: &quot;npm run build &amp;&amp; gh-pages -d public&quot;,</td>
+      </tr>
+      <tr>
+        <td id="file-package-json-snippet3-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-package-json-snippet3-LC4" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/package.json-snippet3" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-package-json-snippet3">package.json-snippet3</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>And voila! I was able to deploy my site manually from my computer using the <code>npm run deploy</code> script. My site was then up and running at <a href="http://deborah-digges.github.io/">deborah-digges.github.io</a></p>
+<h2>✨Continuously✨ Deploying with Travis CI</h2>
+<p>Great! I deployed my Gatsby site! However, I wouldn't want to be deploying a site manually from my laptop on a Friday afternoon.</p>
+<p>I decided to <a href="https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment">continously deploy</a> my site so that every new commit would automatically be deployed to my GitHub Pages site. This was exciting, but I had bypassed an important step which is having automated tests for my site to ensure that a bad commit did not bring down my entire blog. However, I decided to live <em>dangerously</em> and keep the testing of my Gatsby site for a future blog post.</p>
+<h3>Signing Up</h3>
+<p>I signed up on the <a href="https://travis-ci.org/">Travis CI</a> website with my GitHub account and consented to sharing my GitHub data with Travis.</p>
+<h3>Enabling the Repository</h3>
+<p>I then headed to the <a href="https://travis-ci.org/account/repositories">repositories</a> page and enabled builds for the <code>deborah-digges.github.io</code> repository.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e178f0254c50b1fe411174f710866daf/1dbe8/travis-toggle.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 9%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAWUlEQVQI132NUQrAIAxDvf/h9rNTDBlSpVbbaTYF97GPBR6EQBKXc8aAmV9KKRjqvU++WpmYYfcnrtZgqqi1wqWUEGMEESGEMP04WKW/QVbDdvg5KCKgp3sDkPuchQx7JbsAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Travis Toggle"
+        title="Travis Toggle"
+        src="/static/e178f0254c50b1fe411174f710866daf/5a190/travis-toggle.png"
+        srcset="/static/e178f0254c50b1fe411174f710866daf/772e8/travis-toggle.png 200w,
+/static/e178f0254c50b1fe411174f710866daf/e17e5/travis-toggle.png 400w,
+/static/e178f0254c50b1fe411174f710866daf/5a190/travis-toggle.png 800w,
+/static/e178f0254c50b1fe411174f710866daf/c1b63/travis-toggle.png 1200w,
+/static/e178f0254c50b1fe411174f710866daf/1dbe8/travis-toggle.png 1374w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h3>Adding the travis.yml file</h3>
+<p>I added a <code>travis.yml</code> file to the root of my repository to tell Travis what to do on every commit to <code>master</code>.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-travis-yml" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-travis-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-travis-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">language</span>: <span class="pl-s">node_js</span></td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-travis-yml-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">before_script</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-travis-yml-LC3" class="blob-code blob-code-inner js-file-line">  - <span class="pl-s">npm install -g gatsby-cli</span></td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-travis-yml-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">node_js</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-travis-yml-LC5" class="blob-code blob-code-inner js-file-line">  - <span class="pl-s"><span class="pl-pds">&quot;</span>10<span class="pl-pds">&quot;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-travis-yml-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">script</span>: <span class="pl-s">git config --global user.email $GH_EMAIL 2&gt; /dev/null &amp;&amp;</span></td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-travis-yml-LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-s">git config --global user.name $GH_USERNAME 2&gt; /dev/null &amp;&amp;</span></td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-travis-yml-LC8" class="blob-code blob-code-inner js-file-line">  <span class="pl-s">git remote set-url origin &quot;https://${GH_USERNAME}:${GH_TOKEN}@github.com/deborah-digges/deborah-digges.github.io.git&quot; 2&gt; /dev/null &amp;&amp;</span></td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-travis-yml-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-s">yarn install &amp;&amp; yarn run deploy 2&gt; /dev/null</span></td>
+      </tr>
+      <tr>
+        <td id="file-travis-yml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-travis-yml-LC10" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/.travis.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-travis-yml">.travis.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>The <code>script</code> runs the <code>yarn run deploy</code> step that I previously used to deploy my site locally. It is doing some extra steps to give Travis CI the right access to push to my GitHub repository.</p>
+<p>It tells the <code>git</code> client installed on Travis CI who I am.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-git-config-sh" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-shell  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-git-config-sh-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-git-config-sh-LC1" class="blob-code blob-code-inner js-file-line">git config --global user.name <span class="pl-smi">$GH_USERNAME</span></td>
+      </tr>
+      <tr>
+        <td id="file-git-config-sh-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-git-config-sh-LC2" class="blob-code blob-code-inner js-file-line">git config --global user.email <span class="pl-smi">$GH_EMAIL</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/git-config.sh" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-git-config-sh">git-config.sh</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>To provide the script push access to my GitHub repository, I embedded my <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">Github Token</a> environment variable in the remote URL.</p>
+<p><div id="gist105560291" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-git-set-remote-url-sh" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-shell  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-git-set-remote-url-sh-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-git-set-remote-url-sh-LC1" class="blob-code blob-code-inner js-file-line">git remote set-url origin <span class="pl-s"><span class="pl-pds">&quot;</span>https://<span class="pl-smi">${GH_USERNAME}</span>:<span class="pl-smi">${GH_TOKEN}</span>@github.com/deborah-digges/</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232/raw/ba0ed148b687464d6c748fe774c4adcea9922f1e/git-set-remote-url.sh" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/41a4775a088c66960146c5dc10f1c232#file-git-set-remote-url-sh">git-set-remote-url.sh</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>Where did these environment variables come from?</p>
+<h3>Configuring Travis Environment Variables</h3>
+<p>I headed to my repository settings and made the following environment variables available to my script.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/fb72cbd528b8986a611d10fff4a60bf5/53948/travis-env-var.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 25.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAsElEQVQY032PiwqEIBBF/f9fjKB3FJGWqfS86x022G1hhYNjzRyvKuw77LrCbRvO88R1XQLXvT/rf0s57zFbC+scXMTzPM/QWsMYI7AOIWCPl5PjOH64v6tpmmDigI+yZVlEWlUVkiRBnufIsgxFUaDve3RdJ3L37v2EIRhGsRiGAZYpI/xZ1zXSNBURKctSeggTP2VfQh7GcZRGCvk0JqGobVs0TSM7k7HvHnxCD2dfsYyAsGOn2DgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Travis Environment Variables"
+        title="Travis Environment Variables"
+        src="/static/fb72cbd528b8986a611d10fff4a60bf5/5a190/travis-env-var.png"
+        srcset="/static/fb72cbd528b8986a611d10fff4a60bf5/772e8/travis-env-var.png 200w,
+/static/fb72cbd528b8986a611d10fff4a60bf5/e17e5/travis-env-var.png 400w,
+/static/fb72cbd528b8986a611d10fff4a60bf5/5a190/travis-env-var.png 800w,
+/static/fb72cbd528b8986a611d10fff4a60bf5/c1b63/travis-env-var.png 1200w,
+/static/fb72cbd528b8986a611d10fff4a60bf5/29007/travis-env-var.png 1600w,
+/static/fb72cbd528b8986a611d10fff4a60bf5/53948/travis-env-var.png 2720w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>It took me a few attempts to get this right, but I am proud to say that my site is now being continously deployed to GitHub Pages on every commit to the <code>master</code> branch of my repository.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/96131b46c0a8a90b746621eb0ba26188/db7ce/travis-failed-attempts.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 14.500000000000002%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAbUlEQVQI15WOQQ4CIRAE+f8XNdFdD2pUZHFgljFQsnxAPXTS6VTS5Y7TzPlyJWelmFFbo9bvaZ3b+CCFmAzrvQFutz9wu3vCIsQo6Go/J3WJx6L4qKiu48RN8wn/DEhKfdQx/mP4ygXRzfA9DD/q6+oqEeT9gQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Travis Failed Attempts"
+        title="Travis Failed Attempts"
+        src="/static/96131b46c0a8a90b746621eb0ba26188/5a190/travis-failed-attempts.png"
+        srcset="/static/96131b46c0a8a90b746621eb0ba26188/772e8/travis-failed-attempts.png 200w,
+/static/96131b46c0a8a90b746621eb0ba26188/e17e5/travis-failed-attempts.png 400w,
+/static/96131b46c0a8a90b746621eb0ba26188/5a190/travis-failed-attempts.png 800w,
+/static/96131b46c0a8a90b746621eb0ba26188/c1b63/travis-failed-attempts.png 1200w,
+/static/96131b46c0a8a90b746621eb0ba26188/29007/travis-failed-attempts.png 1600w,
+/static/96131b46c0a8a90b746621eb0ba26188/db7ce/travis-failed-attempts.png 2404w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>This was a lot of work, and in my quest to search for a simpler solution, I will explore using a GitHub Action to continously deploy my site. Stay tuned for more dangerous living!</p></div></div></div></div></body></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2020/09/24/gatsby-deploy/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-1841db332360a105faeb.js"],"app":["/app-87bfdd4843fee3732aae.js"],"component---src-pages-index-js":["/component---src-pages-index-js-741ba3c07f2717a9cf69.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-2a78e23ce79482fd97dd.js"]};/*]]>*/</script><script src="/polyfill-1841db332360a105faeb.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-2a78e23ce79482fd97dd.js" async=""></script><script src="/app-87bfdd4843fee3732aae.js" async=""></script><script src="/framework-8c8d363c63d1a9a80d21.js" async=""></script><script src="/styles-1211262dd08146354a2f.js" async=""></script><script src="/webpack-runtime-c4214cb327f2e6d8ac3f.js" async=""></script></body></html>

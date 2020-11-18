@@ -1,0 +1,686 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.80fd1014c64f5a855bee.css">*{box-sizing:border-box}body,html{margin:0;padding:0}html{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5}@media (min-width:38em){html{font-size:20px}}body{color:#515151;background-color:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}a{color:#268bd2;text-decoration:none}a strong{color:inherit}a:focus,a:hover{text-decoration:underline}h1,h2,h3,h4,h5,h6{margin-bottom:.5rem;font-weight:700;line-height:1.25;text-rendering:optimizeLegibility}h1{font-size:2rem}h2{margin-top:1rem;font-size:1.5rem}h3{margin-top:1.5rem;font-size:1.25rem}h4,h5,h6{margin-top:1rem;font-size:1rem}p{margin-top:0;margin-bottom:1rem}strong{color:#303030}dl,ol,ul{margin-top:0;margin-bottom:1rem}dt{font-weight:700}dd{margin-bottom:.5rem}hr{position:relative;margin:1.5rem 0;border:0;border-top:1px solid #eee;border-bottom:1px solid #fff}abbr{font-size:85%;font-weight:700;color:#555;text-transform:uppercase}abbr[title]{cursor:help;border-bottom:1px dotted #e5e5e5}code,pre{font-family:Menlo,Monaco,Courier New,monospace}code{padding:.25em .5em;font-size:85%;color:#bf616a;border-radius:3px}code,pre{background-color:#f9f9f9}pre{display:block;margin-top:0;margin-bottom:1rem;padding:1rem;font-size:.8rem;line-height:1.4;white-space:pre;white-space:pre-wrap;word-break:break-all;word-wrap:break-word}pre code{padding:0;font-size:100%;color:inherit;background-color:transparent}.highlight{margin-bottom:1rem;border-radius:4px}.highlight pre{margin-bottom:0}.gist .gist-file{font-family:Menlo,Monaco,Courier New,monospace!important}.gist .markdown-body{padding:15px}.gist pre{padding:0;background-color:transparent}.gist .gist-file .gist-data{font-size:.8rem!important;line-height:1.4}.gist code{padding:0;color:inherit;background-color:transparent;border-radius:0}blockquote{padding:.5rem 1rem;margin:.8rem 0;color:#7a7a7a;border-left:.25rem solid #e5e5e5}blockquote p:last-child{margin-bottom:0}@media (min-width:30em){blockquote{padding-right:5rem;padding-left:1.25rem}}img{display:block;max-width:100%;margin:0 0 1rem;border-radius:5px}table{margin-bottom:1rem;width:100%;border:1px solid #e5e5e5;border-collapse:collapse}td,th{padding:.25rem .5rem;border:1px solid #e5e5e5}tbody tr:nth-child(odd) td,tbody tr:nth-child(odd) th{background-color:#f9f9f9}.lead{font-size:1.25rem;font-weight:300}.message{margin-bottom:1rem;padding:1rem;color:#717171;background-color:#f9f9f9}.container{max-width:38rem;padding-left:1rem;padding-right:1rem;margin-left:auto;margin-right:auto}body,html{overflow-x:hidden}html{font-family:"PT Serif",Georgia,Times New Roman,serif}h1,h2,h3,h4,h5,h6{font-family:Calendas_Plus,Helvetica,Arial,sans-serif;font-weight:400;color:#313131;letter-spacing:-.025rem}.wrap{position:relative;width:100%}.container{max-width:28rem}@media (min-width:38em){.container{max-width:32rem}}@media (min-width:56em){.container{max-width:38rem}}.masthead{padding-top:1rem;padding-bottom:1rem;margin-bottom:3rem;border-bottom:1px solid #eee;background-color:#fbfbfb}.masthead-container{margin-right:1rem;margin-left:1rem;display:flex;justify-content:space-between;align-items:center}.masthead-nav{display:flex}.masthead-nav h4{margin-left:2em}.masthead-title{margin-top:0;margin-bottom:0;color:#505050}.masthead-title a{color:#505050}.masthead-title small{font-size:75%;font-weight:400;color:silver;letter-spacing:0}@media (max-width:48em){.masthead-title{text-align:center}}.page,.post{margin-bottom:4em}.page-title,.post-title,.post-title a{color:#303030}.page-title,.post-title{margin-top:0}.post-date{display:block;margin-top:-.5rem;margin-bottom:1rem;color:#9a9a9a}.related{padding-top:2rem;padding-bottom:2rem;border-top:1px solid #eee}.related-posts{padding-left:0;list-style:none}.related-posts h3{margin-top:0}.related-posts li small{font-size:75%;color:#999}.related-posts li a:hover{color:#268bd2;text-decoration:none}.related-posts li a:hover small{color:inherit}img{clear:both;margin:0 auto}.align-center{text-align:center}.disclaimer-header{background-color:#bd6666;padding:2%;margin:5%;color:#fff;border-radius:5px;-webkit-border-radius:5px;-moz-border-radius:5px}@font-face{font-family:Calendas_Plus;src:url(/static/Calendas_Plus-4988e3b187a55c809d2358cfa8e2d340.otf) format("opentype")}</style><meta name="generator" content="Gatsby 2.24.53"/><link href="https://github.githubassets.com/assets/gist-embed-b3b573358bfc66d89e1e95dbf8319c09.css" rel="stylesheet"/><link rel="shortcut icon" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/favicon.ico"/><link rel="icon" type="image/png" sizes="16x16" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/favicon-16x16.png"/><link rel="icon" type="image/png" sizes="32x32" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="48x48" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/favicon-48x48.png"/><link rel="manifest" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/manifest.json"/><meta name="mobile-web-app-capable" content="yes"/><meta name="theme-color" content="#fff"/><meta name="application-name" content="gatsby-starter-hello-world"/><link rel="apple-touch-icon" sizes="57x57" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="60x60" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-60x60.png"/><link rel="apple-touch-icon" sizes="72x72" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="76x76" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-76x76.png"/><link rel="apple-touch-icon" sizes="114x114" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-114x114.png"/><link rel="apple-touch-icon" sizes="120x120" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-120x120.png"/><link rel="apple-touch-icon" sizes="144x144" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-144x144.png"/><link rel="apple-touch-icon" sizes="152x152" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-152x152.png"/><link rel="apple-touch-icon" sizes="167x167" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-167x167.png"/><link rel="apple-touch-icon" sizes="180x180" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-180x180.png"/><link rel="apple-touch-icon" sizes="1024x1024" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-icon-1024x1024.png"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/><meta name="apple-mobile-web-app-title" content="gatsby-starter-hello-world"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-640x1136.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-750x1334.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-828x1792.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1125x2436.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1242x2208.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1242x2688.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1536x2048.png"/><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1668x2224.png"/><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1668x2388.png"/><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2048x2732.png"/><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1620x2160.png"/><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1136x640.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1334x750.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-1792x828.png"/><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2436x1125.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2208x1242.png"/><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2688x1242.png"/><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2048x1536.png"/><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2224x1668.png"/><link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2388x1668.png"/><link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2732x2048.png"/><link rel="apple-touch-startup-image" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="/icons-dce8fa3f2a03c607ed7474876ee1dfbe/apple-touch-startup-image-2160x1620.png"/><link as="script" rel="preload" href="/webpack-runtime-c4214cb327f2e6d8ac3f.js"/><link as="script" rel="preload" href="/styles-1211262dd08146354a2f.js"/><link as="script" rel="preload" href="/framework-8c8d363c63d1a9a80d21.js"/><link as="script" rel="preload" href="/app-87bfdd4843fee3732aae.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-2a78e23ce79482fd97dd.js"/><link as="fetch" rel="preload" href="/page-data/2020/10/31/Understanding-Docker-Container-Actions/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><body class="theme-base-13 sidebar-overlay"><div class="wrap"><div class="masthead"><div class="masthead-container"><h1 class="masthead-title"><a title="Home" href="/">Deb&#x27;s</a> <small>Doodles</small></h1><div class="masthead-nav"><h2 class="masthead-title"><a href="/about">About</a></h2></div></div></div><div class="container content"><div class="post"><h1 class="post-title">Understanding Docker Container Actions</h1><span class="post-date">2020-10-31</span><div><p>In my <a href="https://deborah-digges.github.io/2020/10/14/Building-a-Github-action">previous blog post</a>, I described in detail the motivation behind GitHub actions, their architecture, how events flow through GitHub, and how to create a custom GitHub Action from scratch using Javascript.</p>
+<p>I went over the two types of actions: Javascript actions and  Docker container actions. Most of the open-source actions I’ve explored seem to be built using approach Javascript actions, perhaps for these reasons:</p>
+<ol>
+<li>They can make use of a handy Github <a href="https://github.com/actions/toolkit">toolkit</a> that provides libraries to access the action inputs and a GitHub client that can be configured with a token</li>
+<li>All GitHub Runners support Node 12 out of the box which makes it very simple to write actions based on this version of Node—no extra configuration required. To look at the supported software on various GitHub Runners, take a look at the documentation <a href="https://docs.github.com/en/free-pro-team@latest/actions/reference/specifications-for-github-hosted-runners#supported-software">here</a>.</li>
+</ol>
+<h2>When Would You Use a Docker Container Action?</h2>
+<p>The Docker Container Action shines in a few cases:</p>
+<ol>
+<li>
+<p><strong>Using Javascript is not an option</strong></p>
+<ul>
+<li>Maybe your team is familiar with other languages or frameworks.</li>
+<li>Maybe you prefer to keep all your tools consistent—maybe you write all their tooling in Go and would like to continue to do so.</li>
+<li>Maybe you’d like to make use of a utility or library not available in Node—for example, a python script for munging or parsing data that your team has already written and that you don’t want to port over to Javascript.</li>
+</ul>
+</li>
+<li><strong>Using a specific version of Node(12) is not an option</strong>: Maybe you would like to base your action off a different Node version.</li>
+</ol>
+<p>Even if you do use the supported version of Node 12 to build your action, it still may benefit you to use a Docker Container Action for a few reasons:</p>
+<ol>
+<li>You’d no longer need to include the <code>node_modules</code> folder directly in your action repo. You could have a <code>package.json</code> file which enumerates dependencies and have your docker container pull the dependencies when the action is run.</li>
+<li>Bundling the environment needed to run an action with the action itself would prevent possibly breaking changes during software upgrades on the GitHub runner environment.</li>
+</ol>
+<h2>Creating a Docker Container Action</h2>
+<p>While looking for interesting actions to build, I stumbled across <a href="https://github.com/storybookjs/action/">this action</a> in the <a href="http://github.com/storybookjs">StoryBook GitHub organization</a> that hadn’t been fully fleshed out yet!</p>
+<p>It is an action that is meant to build and deploy a Storybook site to either GitHub Pages or an AWS S3 bucket. I’m going to go over how to build a GitHub Docker Container Action for this use case.</p>
+<p>For the hello world introduction to Docker Container actions, check out the <a href="https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/creating-a-docker-container-action">GitHub docs</a>.</p>
+<h3>Defining the Action</h3>
+<p>We first define the interface of the action—its inputs, its outputs, and its environment—in an <code>action.yml</code> file in the root of the repository.</p>
+<p><div id="gist106185670" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-action-yml" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-action-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-action-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">name</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>Storybook Publisher<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-action-yml-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">description</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>Publish a Storybook Site to GitHub Pages<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-action-yml-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">inputs</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-action-yml-LC4" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">access-token</span>:  </td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-action-yml-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">description</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>A GitHub personal access token used to commit to a branch on your behalf.<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-action-yml-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">required</span>: <span class="pl-c1">true</span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-action-yml-LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">branch</span>:  </td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-action-yml-LC8" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">description</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>The branch to publish your Storybook site to.<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-action-yml-LC9" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">required</span>: <span class="pl-c1">true</span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-action-yml-LC10" class="blob-code blob-code-inner js-file-line">    <span class="pl-ent">default</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>gh-pages<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-action-yml-LC11" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">runs</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-action-yml-LC12" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">using</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>docker<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-action-yml-LC13" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">image</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>Dockerfile<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-action-yml-LC14" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">args</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-action-yml-LC15" class="blob-code blob-code-inner js-file-line">    - <span class="pl-s">${{ inputs.access-token }}</span></td>
+      </tr>
+      <tr>
+        <td id="file-action-yml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-action-yml-LC16" class="blob-code blob-code-inner js-file-line">    - <span class="pl-s">${{ inputs.branch }}</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/bf750b042e9f403356d792b6198ee5b2/raw/04059a99402e1bfdc269ebf32dd5021672f5d86b/action.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/bf750b042e9f403356d792b6198ee5b2#file-action-yml">action.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<h4>Inputs to the Action</h4>
+<p>We specify the following inputs to the GitHub Action:</p>
+<ol>
+<li><code>access-token</code>: A GitHub Personal Access Token required to push to a specific branch on the repository.</li>
+<li><code>branch</code>: The target branch to which to deploy the Storybook site.</li>
+</ol>
+<h4>Docker Image for the Action</h4>
+<p>Docker Container Actions specify the image using which to start a container in which the action's code is run.</p>
+<p>For Docker Actions, we specify the action to run using <code>docker</code>. The <code>image</code> could be indicated in one of two ways:</p>
+<ol>
+<li>Using the Dockerfile in the action’s repository:</li>
+</ol>
+<p><div id="gist106185676" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-snippet1-action-yml" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-snippet1-action-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-snippet1-action-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">runs</span>: </td>
+      </tr>
+      <tr>
+        <td id="file-snippet1-action-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-snippet1-action-yml-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">using</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>docker<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-snippet1-action-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-snippet1-action-yml-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">image</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>Dockerfile<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/663207528155414186a80192b49821c2/raw/56ce708274ebc671addf7f072946b1b1eccc1b0c/snippet1-action.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/663207528155414186a80192b49821c2#file-snippet1-action-yml">snippet1-action.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>This is what we've used in our example.</p>
+<ol start="2">
+<li>Using an image on the public Docker Registry:</li>
+</ol>
+<p><div id="gist106185683" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-snippet2-action-yml" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-snippet2-action-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-snippet2-action-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">runs</span>: </td>
+      </tr>
+      <tr>
+        <td id="file-snippet2-action-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-snippet2-action-yml-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">using</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>docker<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+      <tr>
+        <td id="file-snippet2-action-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-snippet2-action-yml-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-ent">image</span>: <span class="pl-s"><span class="pl-pds">&#39;</span>docker://debian:stretch-slim<span class="pl-pds">&#39;</span></span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/ffa72e3e03047d30122c67d7b9d6d912/raw/106fee22ecaf3a10864b17bbc87de2c47f5027a9/snippet2-action.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/ffa72e3e03047d30122c67d7b9d6d912#file-snippet2-action-yml">snippet2-action.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<h4>Passing Inputs to the Docker Container</h4>
+<p>Ideally, I would have liked that the inputs specified for the Docker Action were automatically passed to the Docker Container when it started. However, there is an <a href="https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/metadata-syntax-for-github-actions#runsargs">extra step</a> needed to do so. <code>args</code> specify the arguments to be passed to the Docker container when the Job runner runs the action.</p>
+<p><div id="gist106185688" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-snippet3-action-yml" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-snippet3-action-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-snippet3-action-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">args</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-snippet3-action-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-snippet3-action-yml-LC2" class="blob-code blob-code-inner js-file-line">   - <span class="pl-s">${{ inputs.access-token }}</span></td>
+      </tr>
+      <tr>
+        <td id="file-snippet3-action-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-snippet3-action-yml-LC3" class="blob-code blob-code-inner js-file-line">   - <span class="pl-s">${{ inputs.branch }}</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/828a121f284bfae2de69fa95dfee73bb/raw/ce0c86c15a7d692af647cddc1fade8883a2b0c36/snippet3-action.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/828a121f284bfae2de69fa95dfee73bb#file-snippet3-action-yml">snippet3-action.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>The job runner passes the args to the container's <code>ENTRYPOINT</code> when the container starts up.</p>
+<h3>Creating the Dockerfile</h3>
+<p>We follow the standard syntax and principles for writing Dockerfiles with a few caveats specific to the GitHub implementation outlined <a href="https://docs.github.com/en/free-pro-team@latest/actions/creating-actions/dockerfile-support-for-github-actions">here</a>.</p>
+<p><div id="gist106185693" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-dockerfile" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-dockerfile  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-dockerfile-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-dockerfile-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">FROM</span> alpine:3.10</td>
+      </tr>
+      <tr>
+        <td id="file-dockerfile-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-dockerfile-LC2" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-dockerfile-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-dockerfile-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">RUN</span> apk add --update nodejs nodejs-npm</td>
+      </tr>
+      <tr>
+        <td id="file-dockerfile-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-dockerfile-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-k">RUN</span> apk add git</td>
+      </tr>
+      <tr>
+        <td id="file-dockerfile-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-dockerfile-LC5" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-dockerfile-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-dockerfile-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-k">COPY</span> entrypoint.sh /entrypoint.sh</td>
+      </tr>
+      <tr>
+        <td id="file-dockerfile-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-dockerfile-LC7" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-dockerfile-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-dockerfile-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-k">ENTRYPOINT</span> [<span class="pl-s">&quot;/entrypoint.sh&quot;</span>]</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/bb4f02d6d0334880b5b96ffd229e10f2/raw/e3c8d7d687bb4cba2ed0e4555dd9e922cc95dba6/Dockerfile" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/bb4f02d6d0334880b5b96ffd229e10f2#file-dockerfile">Dockerfile</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>The Dockerfile for this action uses <code>alpine</code> linux as a base for the image, adds node and git, and instructs Docker to run <code>entrypoint.sh</code> when a container starts using this image.</p>
+<p>The Github runner will will build an image from our Dockerfile, start a container using this image, and run the code in <code>entrypoint.sh</code> when the container is started.</p>
+<p>The container is started by the GitHub job runner using the following command which passes a lot of required parameters to the container:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 800px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/39f56089b50c4e19cd70828c00a29162/a30c9/docker-run.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 16.5%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAkElEQVQI12WO2w6CMBBE+ztgTIGkNySE0ILIm1xEG///N8Z2jUTjw+TMbiY7y0zdIapselKuanBR4ZAbJJlCwuWP0q/dx0emmcSxMGBctzDnDdrN0P2KMvhq9MHfIO0M2a1E0V4h7LR76ZY/cW3BilP4bHzSATM8AjeocCSSCi6eCiNpHjzl3rzvGeUmcNXgBfrsaFL43M9RAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Docker run Command in a GitHub workflow"
+        title="Docker run Command in a GitHub workflow"
+        src="/static/39f56089b50c4e19cd70828c00a29162/5a190/docker-run.png"
+        srcset="/static/39f56089b50c4e19cd70828c00a29162/772e8/docker-run.png 200w,
+/static/39f56089b50c4e19cd70828c00a29162/e17e5/docker-run.png 400w,
+/static/39f56089b50c4e19cd70828c00a29162/5a190/docker-run.png 800w,
+/static/39f56089b50c4e19cd70828c00a29162/c1b63/docker-run.png 1200w,
+/static/39f56089b50c4e19cd70828c00a29162/29007/docker-run.png 1600w,
+/static/39f56089b50c4e19cd70828c00a29162/a30c9/docker-run.png 2614w"
+        sizes="(max-width: 800px) 100vw, 800px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Some important ones are:</p>
+<ol>
+<li><code>--workdir /github/workspace</code>: it sets the working directory of the container to the runner workspace (where, in this case, the repository has already been cloned). This directory is also passed as the <code>GITHUB_WORKSPACE</code> environment variable.</li>
+<li>
+<p>The <code>args</code> specified in <code>action.yml</code> are passed as the last arguments:</p>
+<ul>
+<li><code>Deborah-Digges:***</code>: obfuscated GitHub token.</li>
+<li><code>gh-pages</code>: branch on the repository to push to.</li>
+</ul>
+</li>
+</ol>
+<h3>Running Code in the Container!</h3>
+<p>We’ve specified our <code>ENTRYPOINT</code> to be a bash script, and we could run a Node script, a python module, or pretty much anything we wanted!</p>
+<p>In this case, instead of writing the code to build and push a Storybook site to Github pages, we're going to use <a href="https://github.com/storybookjs/storybook-deployer">storybook-deployer</a>. Sorry for cheating! It’s not complete, because, as you see, it assumes a lot of things about the project (like the fact that it uses npm and not yarn, for example).</p>
+<p><div id="gist106185705" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-entrypoint-sh" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-shell  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-entrypoint-sh-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-entrypoint-sh-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#!</span>/bin/sh -l</span></td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-entrypoint-sh-LC2" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-entrypoint-sh-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">cd</span> <span class="pl-smi">$GITHUB_WORKSPACE</span></td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-entrypoint-sh-LC4" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-entrypoint-sh-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Install the deployer</span></td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-entrypoint-sh-LC6" class="blob-code blob-code-inner js-file-line">npm install --save-dev @storybook/storybook-deployer</td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-entrypoint-sh-LC7" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-entrypoint-sh-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Install other dependencies</span></td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-entrypoint-sh-LC9" class="blob-code blob-code-inner js-file-line">npm install</td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-entrypoint-sh-LC10" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-entrypoint-sh-LC11" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-entrypoint-sh-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-k">export</span> GH_TOKEN=<span class="pl-smi">${1}</span></td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-entrypoint-sh-LC13" class="blob-code blob-code-inner js-file-line"><span class="pl-k">export</span> BRANCH=<span class="pl-smi">${2}</span></td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-entrypoint-sh-LC14" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-entrypoint-sh-LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-c"><span class="pl-c">#</span> Deploy to GitHub Pages</span></td>
+      </tr>
+      <tr>
+        <td id="file-entrypoint-sh-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-entrypoint-sh-LC16" class="blob-code blob-code-inner js-file-line">npx storybook-to-ghpages --host-token-env-variable=GH_TOKEN --branch=<span class="pl-smi">$BRANCH</span> --ci</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/ab501c9044e10b6444fecd2f945879cc/raw/dbcd90db83562a65dc7e9408504e9505016219fa/entrypoint.sh" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/ab501c9044e10b6444fecd2f945879cc#file-entrypoint-sh">entrypoint.sh</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>The steps to deploy the storybook site:</p>
+<ol>
+<li>Install the <code>storybook-deployer</code> dependency.</li>
+<li>Run storybook-deployer with the correct branch and token arguments.</li>
+</ol>
+<h2>Using a Docker Container Action in a GitHub Workflow</h2>
+<p>Let’s see how we can use this action inside a repository which uses Storybook, to build and deploy the Storybook site to the <code>gh-pages</code> branch of GitHub on every push to master.</p>
+<p>We need to create a workflow file in the repository located at <code>.github/workflows</code>.</p>
+<p><div id="gist106185720" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-workflow-yml" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-workflow-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-workflow-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">name</span>: <span class="pl-s">Deploy to GitHub Pages</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-workflow-yml-LC2" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-workflow-yml-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">on</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-workflow-yml-LC4" class="blob-code blob-code-inner js-file-line"> <span class="pl-ent">push</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-workflow-yml-LC5" class="blob-code blob-code-inner js-file-line">   <span class="pl-ent">branches</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-workflow-yml-LC6" class="blob-code blob-code-inner js-file-line">     <span class="pl-s">master</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-workflow-yml-LC7" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-workflow-yml-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">jobs</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-workflow-yml-LC9" class="blob-code blob-code-inner js-file-line"> <span class="pl-ent">build</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-workflow-yml-LC10" class="blob-code blob-code-inner js-file-line">   <span class="pl-ent">runs-on</span>: <span class="pl-s">ubuntu-latest</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-workflow-yml-LC11" class="blob-code blob-code-inner js-file-line">   <span class="pl-ent">steps</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-workflow-yml-LC12" class="blob-code blob-code-inner js-file-line">     - <span class="pl-ent">uses</span>: <span class="pl-s">actions/checkout@v2</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-workflow-yml-LC13" class="blob-code blob-code-inner js-file-line">     - <span class="pl-ent">name</span>: <span class="pl-s">Install dependencies</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-workflow-yml-LC14" class="blob-code blob-code-inner js-file-line">       <span class="pl-ent">run</span>: <span class="pl-s">npm install</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-workflow-yml-LC15" class="blob-code blob-code-inner js-file-line">     - <span class="pl-ent">name</span>: <span class="pl-s">Deploy storybook to Github Pages</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-workflow-yml-LC16" class="blob-code blob-code-inner js-file-line">       <span class="pl-ent">uses</span>: <span class="pl-s">deborah-digges/deploy-storybook-action@v13.0</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-workflow-yml-LC17" class="blob-code blob-code-inner js-file-line">       <span class="pl-ent">with</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-workflow-yml-LC18" class="blob-code blob-code-inner js-file-line">         <span class="pl-ent">access-token</span>: <span class="pl-s">${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/8c538939f6e5492177969df54afe61bb/raw/0833264ce9db2621ead8b0c6e1b98010a20148fb/workflow.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/8c538939f6e5492177969df54afe61bb#file-workflow-yml">workflow.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>We specify that we want this workflow run on every <em>push</em> to the branch <em>master</em>. This workflow has a single job called <code>build</code> that has 3 steps:</p>
+<ol>
+<li>Checkout the repository using the <code>actions/checkout@v2</code> action.</li>
+<li>Install dependencies by running a script.</li>
+<li>Deploy Storybook site to GitHub Pages using the action we just created.</li>
+</ol>
+<p>We specify an action using the syntax <code>deborah-digges/deploy-storybook-action@v13.0</code> which include:</p>
+<ol>
+<li>The owner or organization name.</li>
+<li>The repository name.</li>
+<li>The version which could be a tag or a commit ID in the repository.</li>
+</ol>
+<p>To see this workflow in <a href="https://github.com/Deborah-Digges/test-storybook-action/actions/runs/334499434">action</a> (no pun intended), check out  <a href="https://github.com/Deborah-Digges/test-storybook-action">this</a> repository that uses the action we just built to deploy a Storybook site to <a href="https://deborah-digges.github.io/test-storybook-action/">GitHub Pages</a></p>
+<h2>Do you need a GitHub Action?</h2>
+<p>It’s a good exercise to think about whether we need a separate GitHub Action to encapsulate the logic in a step or whether it can be performed within the workflow itself.</p>
+<p>To understand this better, it's important to remember that a step in a workflow can either be:</p>
+<ol>
+<li>An action that encapsulates some logic, invoked using the inputs required by it.</li>
+<li>A bash command run within the Workflow itself.</li>
+</ol>
+<p>In this case, the amount of reusable logic in the action we just built is negligible, and the action is just a thin wrapper around the <code>deploy-storybook</code> tool that exists already. We could just as well run this tool directly within the workflow.</p>
+<p>Changing the workflow file to run the action code within the workflow file does the same job without having to create and maintain a brand new action repository!</p>
+<p><div id="gist106185728" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-workflow-yml" class="file my-2">
+    
+
+  <div itemprop="text" class="Box-body p-0 blob-wrapper data type-yaml  ">
+      
+<table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
+      <tr>
+        <td id="file-workflow-yml-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-workflow-yml-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">name</span>: <span class="pl-s">Deploy to GitHub Pages</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-workflow-yml-LC2" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-workflow-yml-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">on</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-workflow-yml-LC4" class="blob-code blob-code-inner js-file-line"> <span class="pl-ent">push</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-workflow-yml-LC5" class="blob-code blob-code-inner js-file-line">   <span class="pl-ent">branches</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-workflow-yml-LC6" class="blob-code blob-code-inner js-file-line">     <span class="pl-s">master</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-workflow-yml-LC7" class="blob-code blob-code-inner js-file-line"> </td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-workflow-yml-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">jobs</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-workflow-yml-LC9" class="blob-code blob-code-inner js-file-line"> <span class="pl-ent">build</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-workflow-yml-LC10" class="blob-code blob-code-inner js-file-line">   <span class="pl-ent">runs-on</span>: <span class="pl-s">ubuntu-latest</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-workflow-yml-LC11" class="blob-code blob-code-inner js-file-line">   <span class="pl-ent">steps</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-workflow-yml-LC12" class="blob-code blob-code-inner js-file-line">     - <span class="pl-ent">uses</span>: <span class="pl-s">actions/checkout@v2</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-workflow-yml-LC13" class="blob-code blob-code-inner js-file-line">     - <span class="pl-ent">name</span>: <span class="pl-s">Install dependencies</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-workflow-yml-LC14" class="blob-code blob-code-inner js-file-line">       <span class="pl-ent">run</span>: <span class="pl-s">npm install</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-workflow-yml-LC15" class="blob-code blob-code-inner js-file-line">     - <span class="pl-ent">name</span>: <span class="pl-s">Deploy storybook to Github Pages</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-workflow-yml-LC16" class="blob-code blob-code-inner js-file-line">       <span class="pl-ent">run</span>: <span class="pl-s">npm install --save-dev @storybook/storybook-deployer &amp;&amp; npx storybook-to-ghpages --branch=$BRANCH --ci</span></td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-workflow-yml-LC17" class="blob-code blob-code-inner js-file-line">       <span class="pl-ent">env</span>:</td>
+      </tr>
+      <tr>
+        <td id="file-workflow-yml-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-workflow-yml-LC18" class="blob-code blob-code-inner js-file-line">         <span class="pl-ent">GH_TOKEN</span>: <span class="pl-s">${{ secrets.GH_TOKEN }}</span></td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/Deborah-Digges/342c40700fdbcac30629c93093cd1838/raw/544e079d713c286b721883376e640d34b92ffb2b/workflow.yml" style="float:right">view raw</a>
+        <a href="https://gist.github.com/Deborah-Digges/342c40700fdbcac30629c93093cd1838#file-workflow-yml">workflow.yml</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div></p>
+<p>The question we should really answer before embarking on writing a standalone GitHub Action is:</p>
+<p><em>Would other people benefit from this abstraction?</em></p>
+<p>If the answer is no, we probably don’t need to write a new GitHub Action.</p>
+<h2>Wrapping Up</h2>
+<p>In this article we learnt how to write a Docker Container Action.</p>
+<p>Check out the code for the action itself <a href="https://github.com/Deborah-Digges/publish-storybook-action">here</a>.</p>
+<p>Also, check out how this action is used in <a href="https://github.com/Deborah-Digges/test-storybook-action">this Storybook project</a></p>
+<p>If you’d like a quick refresher on what GitHub actions are, why they’re useful, or how to write a Javascript action, check out my <a href="https://deborah-digges.github.io/2020/10/14/Building-a-Github-action">previous article</a></p></div></div></div></div></body></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/2020/10/31/Understanding-Docker-Container-Actions/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-1841db332360a105faeb.js"],"app":["/app-87bfdd4843fee3732aae.js"],"component---src-pages-index-js":["/component---src-pages-index-js-741ba3c07f2717a9cf69.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-2a78e23ce79482fd97dd.js"]};/*]]>*/</script><script src="/polyfill-1841db332360a105faeb.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-2a78e23ce79482fd97dd.js" async=""></script><script src="/app-87bfdd4843fee3732aae.js" async=""></script><script src="/framework-8c8d363c63d1a9a80d21.js" async=""></script><script src="/styles-1211262dd08146354a2f.js" async=""></script><script src="/webpack-runtime-c4214cb327f2e6d8ac3f.js" async=""></script></body></html>

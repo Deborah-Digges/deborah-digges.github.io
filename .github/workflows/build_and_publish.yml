@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@1a21a43b6391b7368498813219868e7060f7e6f8 
+      - uses: enriikke/gatsby-gh-pages-action@v2.1.1
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: master

@@ -21,6 +21,6 @@ My favorite chapter is the one on the now-famous new year song "Auld Lang Syne".
 
 Spoiler alert: Auld Lang Syne was rated 5/5.
 
-This was a difficult book to read because of the honesty with which it describes the human condition. It is a book to be savored and appreciated slowly, rather flipped through. Almost every chapter made me sob but that may have been something to do with me rather than the book. To the average reader, be prepared for the moderate to severe pulling of your heart strings.
+This was a difficult book to read because of the honesty with which it describes the human condition. It is a book to be savored and appreciated slowly, rather than flipped through. Almost every chapter made me sob but that may have been something to do with me rather than the book. To the average reader, be prepared for the moderate to severe pulling of your heart strings.
 
 John Green is an excellent writer - he writes with the same clarity and conviction about heartbreak as he does about lawn grass and air conditioners. *The Anthropocene Reviewed* rummages through the rumpled assortment of human experiences in a manner that is simultaneously comical and reverent. I give it 5/5 stars!

@@ -5,7 +5,6 @@ title: "Book Review: Encyclopedia of An Ordinary Life"
 I was introduced to Amy Rosenthal and this book in John Green's [The Anthropocene Reviewed](https://deborah-digges.github.io/2022/05/27/the-anthropocene-reviewed) in which Green speaks highly of Amy and about their friendship.
 
 ![Book Cover of Encyclopedia of An Ordinary Life](../images/encyclopedia-ordinary-life-content.jpg)
-<div class="align-center">Book Cover of 'Encyclopedia of an Ordinary Life'</div>
 
 The particular excerpt that drew me to her work was this one. When she reached 40, Rosenthal began calculating how many days she had left until she turned 80.
 
@@ -16,7 +15,6 @@ This book is specifically described by Amy as being 'not a biography', so it's f
 It is an ENCYLOPEDIA of all the little tidbits of Rosenthal's life and her musings about the finiteness of human existence arranged in alphabetical order and illustrated in the style of an encyclopedia.
 
 ![Book Cover of Encyclopedia of An Ordinary Life](../images/encyclopedia-ordinary-life.jpg)
-<div class="align-center">Excerpt from 'Encyclopedia of an Ordinary Life'</div>
 
 It is an interesting format; the alphabetic grouping makes the reader jump from one arcane topic to another in a short period of time, which can be disorienting. It reads more like an assorted collection of Amy's musings and back-of-the-napkin notes to herself than it does a book. There are some topics that are poignant and make you stop to reflect on the beauty of life and such, but they are interspersed sparingly between the more trite portions of her day to day existence, giving the reader little chance to appreciate the better portions of the book.
 

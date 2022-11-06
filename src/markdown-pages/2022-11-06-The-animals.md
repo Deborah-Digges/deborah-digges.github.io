@@ -9,9 +9,9 @@ This was a book I judged by its cover and picked up off the [browsery](https://t
 ![Book Cover of The Animals](../images/the-animals.jpg)
 
 
-It is set in an idyllic village where government funding has transformed every building, with the exception of a few, into mystic and nostalgic tourist attractions. It is told through the lens of the village model maker, Dorn, who constructs miniature models of the village's quaint buildings; the models adorn the windows of these buildings to add to their quaintness. 
+It is set in an idyllic village where government funding has transformed every building, with the exception of a few, into a mystic and nostalgic tourist attraction. It is told through the lens of the village model maker, Dorn, who constructs miniature models of the village's quaint buildings; the models adorn the windows of these buildings to add to their quaintness. 
 
-Dorn's life is unfolded through crisp, musical prose, and with the occasional hint of realism. There is, of course, the story of unrequited love as he struggles to muster the courage to profess his love for Ravenna, his teacher friend from the local elementary school. Then there is the family: his father, the unloving patriarch whom he pays the obligatory visit to; his pompous and more successful younger brother who treats him like a doormat; his loving mother who filled his childhood with joy and who was buried when he was just six. 
+Dorn's life is unfolded through crisp, musical prose, and with the occasional hint of realism. There is, of course, the story of unrequited love as he struggles to muster the courage to profess his love for Ravenna, his teacher friend from the local elementary school. Then there is the family: his father, the unloving patriarch whom he pays the obligatory visit to; his pompous and more successful younger brother who treats him like a doormat; his loving mother who filled his childhood with joy, but who was buried when he was just six. 
 
 It's not a bad life: he is well reputed for his craft, he makes time for leisure reading, and he rides his trike around the village, making deliveries of his models and stalking his teacher friend at the school. Still, I could hear his feet dragging through the pages. 
 
@@ -23,7 +23,7 @@ One day, the village announces a new program, "Bring the Wild Home":
 
 > Obtain your animal license today from the Village Hall - be part of this exciting pilot project.
 
-Dorn's neighbor, Leev, gets a wolf; not soon after, Dorn finds him dead by the river with distinct wolf-like marks over his face and body. The village council, to avoid dampening the growing enthusiasm for the program, puts it down to suicide: Villager did not seek help. Leev is buried soon after. 
+Dorn's neighbor, Leev, gets a wolf; soon after, Dorn finds him dead by the river with distinct wolf-like marks over his face and body. The village council, to avoid dampening the growing enthusiasm for the program, puts it down to suicide: "Villager did not seek help". Leev is buried soon after. 
 
 Over time, families in the village get all sorts of animals: racoons, otters, and rats. Dorn's next-door neighbor even gets a bear that can often be seen bounding down the street chasing the children on their bikes. Eventually, the rats chew up the electrical wiring in the village buildings; a fire starts that burns the village to a crisp along with 15 years' worth of Dorn's handiwork - every one of his miniature models is destroyed. Not a single villager dies, but they all move to the city to start new lives. The book ends with Dorn searching out Ravenna, and drops off at a cliffhanger. 
 

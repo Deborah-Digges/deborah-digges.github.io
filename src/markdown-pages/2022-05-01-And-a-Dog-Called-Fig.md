@@ -1,5 +1,5 @@
 ---
-title: "Book Review: And a Dog Called Fig"
+title: "Book Review: Humphreys, Helen (2022) And a Dog Called Fig"
 ---
 
 I’ve never had a dog, so I've never understood the joy and pain of looking after one. When I was a child, I was once doggedly chased by a stray dog (stray dogs were very common where I grew up in India). That experience left an imprint of trauma on me that I haven't since been able to shake off. Whenever a dog approaches me, no matter how adorable and fluffy it may be, my first instinct is to turn around and run as far and fast as my legs will take me.

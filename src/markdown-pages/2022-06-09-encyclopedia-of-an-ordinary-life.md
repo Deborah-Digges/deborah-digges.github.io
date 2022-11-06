@@ -1,5 +1,5 @@
 ---
-title: "Book Review: Encyclopedia of An Ordinary Life"
+title: "Book Review: Rosenthal, Amy Krouse (2005) Encyclopedia of An Ordinary Life"
 ---
 
 I was introduced to Amy Rosenthal and this book in John Green's [The Anthropocene Reviewed](https://deborah-digges.github.io/2022/05/27/the-anthropocene-reviewed) in which Green speaks highly of Amy and about their friendship.

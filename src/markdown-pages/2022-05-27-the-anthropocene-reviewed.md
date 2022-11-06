@@ -1,5 +1,5 @@
 ---
-title: "Book Review: The Anthropocene Reviewed"
+title: "Book Review: Green, John (2021) The Anthropocene Reviewed"
 ---
 
 *The Anthropocene Reviewed* was recommended to me by a friend when the Omicron wave of COVID hit in January making an already bleak winter almost hopeless. It is the kind of book one can read in bursts with whatever fragments of attention run surplus after a long day. Each chapter is short - no more than 5 pages and rates a particular phenomenon in the 

@@ -1,5 +1,5 @@
 ---
-title: "Book Review: The Brain that Changes Itself—Norman Doidge, MD"
+title: "Book Review: Doidge, Norman (2007) The Brain That Changes Itself: Stories of Personal Triumph from the Frontiers of Brain Science."
 ---
 
 This is the most compelling book I have read all year. It delves into neuroplasticity&mdash;the brain's ability to change itself with experience&mdash;by exploring its origin, interviewing the brilliant minds who pushed the field forward, and digging into its applications in areas from love to stroke rehabilitation. I simply cannot stop talking about it to anyone who will listen. “Look!”, I now yell from the rooftops, “Look at what we are capable of”.

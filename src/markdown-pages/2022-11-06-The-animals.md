@@ -2,7 +2,7 @@
 title: "Book Review: Fagan, Cary (2022) The Animals"
 ---
 
-This was a book I judged by its cover and picked up off the [browsery](https://torontopubliclibrary.typepad.com/north-york-central-blog/2012/05/what-is-a-browsery.html#:~:text=You%20may%20wonder%2C%20what%20is,CDs%20and%20DVDs%20and%20magazines.) on a recent trip to the library. The two birds on the cover&mdash;one flying into the burning flame and the other flying upwards from it&mdash;caught my eye, as did the testimonial from Gary Baruh: 
+This was a book I judged by its cover and picked up off the [browsery](https://torontopubliclibrary.typepad.com/north-york-central-blog/2012/05/what-is-a-browsery.html#:~:text=You%20may%20wonder%2C%20what%20is,CDs%20and%20DVDs%20and%20magazines.) on a recent trip to the library. The two birds on the cover&mdash;one flying into the burning flame and the other flying upwards from it&mdash;caught my eye, as did the testimonial from Gary Barwin: 
 
 > "Burns with intelligence, dry wit, and Compassion!"
  

@@ -15,11 +15,11 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "gatsby": "^2.24.50",
+    "gatsby": "^5.5.0",
     "gatsby-image": "^2.4.16",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-google-analytics": "^2.3.14",
-    "gatsby-plugin-sharp": "^2.6.31",
+    "gatsby-plugin-sharp": "^5.5.0",
     "gatsby-remark-copy-linked-files": "^2.3.13",
     "gatsby-remark-embed-gist": "^1.2.1",
     "gatsby-remark-images": "^3.3.28",

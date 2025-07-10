@@ -28,13 +28,13 @@ I did, however, remember her that November afternoon.
 
 “Do you want to talk about it?" I called after her, hoping she would stay to chat.
 
-She told me that she was eighty-six years old; her only son, Gordon, was to be buried the day before in the grave of her husband's grandfather in a small town north of Toronto. The agency she had hired tried to dispose of the urns without a proper burial as they thought her to be an elderly cripple, unlikely to attend the ceremony. Gordon's friend who did show up had to call to tell her that nothing had been done by way of arrangements.
+She told me that she was eighty-six years old; her only son, was to be buried the day before in the grave of her husband's grandfather in a small town north of Toronto. The agency she had hired tried to dispose of the urns without a proper burial as they thought her to be an elderly cripple, unlikely to attend the ceremony. Her son's friend who did show up had to call to tell her that nothing had been done by way of arrangements.
 
 She had a phone-call with the archbishop that same day and gave him hell. Her husband, a hundred years old at the time, teased her:
 
 "Is that how you talk to an archbishop?"
 
-By the time I met her that afternoon, things had happened as planned, although not in the grave of her husband's grandfather as she would have liked. Gordon's friend assured her that the whole town was made aware; he had spent the previous night in four bars downtown, filling the locals in on the dubious practices of the agency.
+By the time I met her that afternoon, things had happened as planned, although not in the grave of her husband's grandfather as she would have liked. Her son's friend assured her that the whole town was made aware; he had spent the previous night in four bars downtown, filling the locals in on the dubious practices of the agency.
 
 Still, she was livid. Her only son's burial being shammed, the agency taking advantage of an elderly woman such as herself, the countless other people they must have been doing this to.
 
@@ -44,5 +44,5 @@ As she started walking away and waved goodbye, I tore the sheet from my drawing 
 
 "Your first famous piece of art, my dear," she said, as she walked away, drawing in hand, and dog in tow.
 
-Every time I pass 134 Carlton Street, I will think of her, of her dog that I managed not to chastise, and of Gordon and how quickly he had to be taken from her. I will also think of the little frame with my little sketch&mdash;my first famous piece of art&mdash;hanging poetically within its focal point, a fall trinket.
+Every time I pass 134 Carlton Street, I will think of her, of her dog that I managed not to chastise, and of her son and how quickly he had to be taken from her. I will also think of the little frame with my little sketch&mdash;my first famous piece of art&mdash;hanging poetically within its focal point, a fall trinket.
 
